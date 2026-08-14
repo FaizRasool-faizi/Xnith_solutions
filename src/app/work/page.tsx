@@ -1,0 +1,11 @@
+import type { Metadata } from 'next';
+import WorkPageContent from '@/components/ui/WorkPageContent';
+
+export const metadata: Metadata = {
+  title: 'Portfolio & Case Studies | XNITH Solutions',
+  description: 'Explore our portfolio of enterprise platforms, AI ecosystems, web applications, and mobile products shipped for forward-thinking organizations.',
+};
+
+export default function WorkPage() {
+  return <WorkPageContent />;
+}
