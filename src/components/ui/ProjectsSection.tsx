@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Activity, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Activity, ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
@@ -18,14 +18,15 @@ const projects = [
     type: 'image'
   },
   {
-    id: 'upticker',
-    title: 'UpTicker AI Coach',
-    slug: '/work',
+    id: 'petstan',
+    title: 'Petstan',
+    slug: '/work/petstan',
     status: 'Active',
-    category: 'Productivity & Wellness',
-    featuresCount: '10 Features',
-    desc: 'UpTicker is an advanced productivity, habit-building, and life management application powered by an embedded AI coach...',
-    type: 'gradient-green'
+    category: '3D Interactive Multi-Vendor Pet Marketplace',
+    featuresCount: '10+ Core Modules',
+    desc: 'Petstan is a modern, high-performance e-commerce platform specifically built for buying, selling, and adopting pets, pet food, and accessories across Pakistan...',
+    image: '/petstan.jpeg',
+    type: 'image'
   },
   {
     id: 'almana',
@@ -103,24 +104,11 @@ export default function ProjectsSection() {
                 {/* Card Image / Banner Top */}
                 <div className="w-full h-56 md:h-64 relative overflow-hidden bg-[#050508]">
                   {project.type === 'image' && project.image ? (
-                    /* Robust img tag ensuring instant preview reload across browsers */
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     />
-                  ) : project.type === 'gradient-green' ? (
-                    <div className="w-full h-full bg-gradient-to-br from-emerald-600 to-green-900 p-6 flex flex-col justify-between relative overflow-hidden">
-                      <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 blur-3xl rounded-full" />
-                      <div className="flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-md bg-white/20 text-white font-bold text-xs flex items-center justify-center">U</span>
-                        <span className="text-white font-bold text-sm">UpTicker</span>
-                      </div>
-                      <div className="relative z-10">
-                        <h4 className="text-2xl md:text-3xl font-extrabold text-white leading-tight">Achieve<br />More.</h4>
-                        <p className="text-xs text-white/70 mt-1 font-mono">Your AI Productivity Coach</p>
-                      </div>
-                    </div>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-teal-800 to-slate-900 p-6 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-48 h-48 bg-teal-400/10 blur-3xl rounded-full" />
