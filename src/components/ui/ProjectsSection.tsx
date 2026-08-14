@@ -3,35 +3,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Activity, LayoutDashboard, Smartphone } from 'lucide-react';
+import Image from 'next/image';
+import { Smartphone, Activity, ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    id: 1,
-    title: 'XNITH Learn',
-    status: 'Live',
-    category: 'Enterprise LMS',
-    features: 'Custom Architecture',
-    desc: 'A scalable learning management ecosystem built for enterprise training and continuous development.',
-    type: 'dashboard'
+    id: 'appointix',
+    title: 'Appointix',
+    slug: '/work/appointix',
+    status: 'Active',
+    category: 'AI-Powered Local Service & Marketplace',
+    featuresCount: '8 Core Modules',
+    desc: 'An intelligent, AI-driven hyperlocal marketplace connecting households with verified local service experts (plumbers, electricians, mechanics)...',
+    image: '/appointix.jpeg',
+    type: 'image'
   },
   {
-    id: 2,
-    title: 'X-Flow Analytics',
-    status: 'Live',
-    category: 'Data & Intelligence',
-    features: 'Real-time Pipeline',
-    desc: 'An advanced predictive analytics platform turning massive data streams into actionable business intelligence.',
-    type: 'chart'
+    id: 'upticker',
+    title: 'UpTicker AI Coach',
+    slug: '/work',
+    status: 'Active',
+    category: 'Productivity & Wellness',
+    featuresCount: '10 Features',
+    desc: 'UpTicker is an advanced productivity, habit-building, and life management application powered by an embedded AI coach...',
+    type: 'gradient-green'
   },
   {
-    id: 3,
-    title: 'OmniHealth Portal',
-    status: 'Live',
-    category: 'Digital Healthcare',
-    features: 'HIPAA Compliant',
-    desc: 'A bilingual patient management and telemedicine application designed for modern healthcare providers.',
-    type: 'mobile'
+    id: 'almana',
+    title: 'Almana | المانع',
+    slug: '/work',
+    status: 'Active',
+    category: 'AI Healthcare',
+    featuresCount: '10 Features',
+    desc: 'Almana Health Compass is a bilingual healthcare mobile application connecting patients to hospital networks...',
+    type: 'gradient-teal'
   }
 ];
 
@@ -79,7 +84,7 @@ export default function ProjectsSection() {
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid Matching Screenshot */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -91,132 +96,86 @@ export default function ProjectsSection() {
             <motion.div 
               key={project.id} 
               variants={itemVariants}
-              className="flex flex-col bg-[#080808] rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 hover:bg-[#0c0c0c] transition-all duration-300 group cursor-pointer"
             >
-              {/* Premium UI Mockup Container */}
-              <div className="w-full h-56 md:h-64 bg-[#050505] relative overflow-hidden flex items-end justify-center px-8 pt-8">
-                
-                {/* Subtle Grid Pattern Background */}
-                <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                
-                {/* Background Glow */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-brand/20 blur-[60px] rounded-full group-hover:bg-brand/30 transition-colors duration-500"></div>
-
-                {/* Abstract UI Elements */}
-                <div className="w-full h-full relative z-10 translate-y-4 group-hover:translate-y-2 transition-transform duration-500 ease-out flex justify-center">
-                  
-                  {project.type === 'dashboard' && (
-                    <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/10 border-b-0 flex shadow-2xl overflow-hidden">
-                      {/* Sidebar */}
-                      <div className="w-1/4 h-full border-r border-white/5 bg-[#0a0a0a] p-3 flex flex-col gap-3">
-                        <div className="w-6 h-6 rounded bg-brand/20 mb-4 flex items-center justify-center"><LayoutDashboard className="w-3 h-3 text-brand" /></div>
-                        <div className="w-full h-2 rounded-full bg-white/10"></div>
-                        <div className="w-2/3 h-2 rounded-full bg-white/5"></div>
-                        <div className="w-full h-2 rounded-full bg-white/5"></div>
+              <Link
+                href={project.slug}
+                className="flex flex-col bg-[#0b0b12] rounded-3xl overflow-hidden border border-white/10 hover:border-brand/40 transition-all duration-500 group cursor-pointer h-full shadow-2xl"
+              >
+                {/* Card Image / Banner Top */}
+                <div className="w-full h-56 md:h-64 relative overflow-hidden bg-[#050508]">
+                  {project.type === 'image' && project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  ) : project.type === 'gradient-green' ? (
+                    <div className="w-full h-full bg-gradient-to-br from-emerald-600 to-green-900 p-6 flex flex-col justify-between relative overflow-hidden">
+                      <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 blur-3xl rounded-full" />
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-md bg-white/20 text-white font-bold text-xs flex items-center justify-center">U</span>
+                        <span className="text-white font-bold text-sm">UpTicker</span>
                       </div>
-                      {/* Main Content */}
-                      <div className="flex-1 p-4 flex flex-col gap-4">
-                        {/* Header */}
-                        <div className="flex justify-between items-center">
-                           <div className="w-24 h-3 rounded-full bg-white/10"></div>
-                           <div className="w-8 h-8 rounded-full bg-white/5"></div>
+                      <div className="relative z-10">
+                        <h4 className="text-2xl md:text-3xl font-extrabold text-white leading-tight">Achieve<br />More.</h4>
+                        <p className="text-xs text-white/70 mt-1 font-mono">Your AI Productivity Coach</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-teal-800 to-slate-900 p-6 flex flex-col justify-between relative overflow-hidden">
+                      <div className="absolute top-0 right-0 w-48 h-48 bg-teal-400/10 blur-3xl rounded-full" />
+                      <div className="flex items-center gap-2">
+                        <Activity className="w-5 h-5 text-teal-300" />
+                        <span className="text-white font-bold text-sm">Almana | المانع</span>
+                      </div>
+                      <div className="relative z-10 flex items-center justify-center h-28">
+                        <div className="w-28 h-40 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-2 shadow-2xl">
+                          <div className="w-full h-full bg-[#050505] rounded-xl p-2 flex flex-col justify-between">
+                            <div className="w-8 h-2 rounded bg-teal-400/40"></div>
+                            <div className="w-full h-12 rounded bg-white/5 border border-white/10"></div>
+                          </div>
                         </div>
-                        {/* Grid */}
-                        <div className="grid grid-cols-2 gap-3">
-                           <div className="h-16 rounded-lg bg-brand/5 border border-brand/10"></div>
-                           <div className="h-16 rounded-lg bg-white/5"></div>
-                        </div>
-                        <div className="flex-1 rounded-t-lg bg-white/5 mt-2"></div>
                       </div>
                     </div>
                   )}
 
-                  {project.type === 'chart' && (
-                    <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/10 border-b-0 flex flex-col shadow-2xl p-6">
-                      <div className="flex justify-between items-center mb-6">
-                         <div className="w-8 h-8 rounded bg-brand/20 flex items-center justify-center"><Activity className="w-4 h-4 text-brand" /></div>
-                         <div className="w-16 h-4 rounded-full bg-white/10"></div>
-                      </div>
-                      {/* SVG Line Chart */}
-                      <div className="flex-1 relative w-full border-b border-l border-white/10">
-                        <svg viewBox="0 0 100 50" className="absolute inset-0 w-full h-full overflow-visible" preserveAspectRatio="none">
-                          <motion.path 
-                            d="M0,40 C20,35 30,10 50,20 C70,30 80,5 100,10" 
-                            fill="none" 
-                            stroke="#F569FF" 
-                            strokeWidth="2"
-                            initial={{ pathLength: 0 }}
-                            whileInView={{ pathLength: 1 }}
-                            transition={{ duration: 1.5, ease: "easeOut" }}
-                          />
-                          <motion.path 
-                            d="M0,40 C20,35 30,10 50,20 C70,30 80,5 100,10 L100,50 L0,50 Z" 
-                            fill="url(#brandGradient)" 
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1.5, delay: 0.5 }}
-                          />
-                          <defs>
-                            <linearGradient id="brandGradient" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor="#F569FF" stopOpacity="0.3" />
-                              <stop offset="100%" stopColor="#F569FF" stopOpacity="0" />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      </div>
-                    </div>
-                  )}
-
-                  {project.type === 'mobile' && (
-                    <div className="w-40 h-full rounded-t-3xl bg-[#111] border border-white/20 border-b-0 shadow-2xl relative p-2">
-                       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-4 bg-[#050505] rounded-b-xl border-b border-x border-white/10 z-20"></div>
-                       <div className="w-full h-full rounded-t-2xl bg-[#0a0a0a] overflow-hidden flex flex-col">
-                         {/* Mobile Header */}
-                         <div className="h-16 bg-brand/10 border-b border-brand/20 pt-6 px-3 flex items-center gap-2">
-                            <Smartphone className="w-3 h-3 text-brand" />
-                            <div className="w-12 h-2 rounded-full bg-brand/40"></div>
-                         </div>
-                         {/* Mobile List */}
-                         <div className="flex-1 p-3 flex flex-col gap-3">
-                           <div className="w-full h-8 rounded-lg bg-white/5"></div>
-                           <div className="w-full h-8 rounded-lg bg-white/5"></div>
-                           <div className="w-full h-8 rounded-lg bg-white/5"></div>
-                         </div>
-                       </div>
-                    </div>
-                  )}
-
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <div className="p-8">
-                {/* Title & Status */}
-                <div className="flex items-center justify-between mb-5">
-                  <h3 className="text-xl font-bold text-white group-hover:text-brand transition-colors">
-                    {project.title}
-                  </h3>
-                  <span className="text-xs font-semibold text-brand tracking-widest uppercase">
-                    {project.status}
-                  </span>
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b12] via-transparent to-transparent opacity-40 pointer-events-none" />
                 </div>
 
-                {/* Tags */}
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="px-3 py-1 rounded border border-brand/20 bg-brand/5 text-brand text-xs font-medium">
-                    {project.category}
+                {/* Card Content Below */}
+                <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
+                  <div>
+                    {/* Line 1: Title & Status */}
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-brand transition-colors flex items-center gap-2">
+                        {project.title}
+                        <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all text-brand" />
+                      </h3>
+                      <span className="text-xs font-mono font-semibold text-emerald-400">
+                        {project.status}
+                      </span>
+                    </div>
+
+                    {/* Line 2: Category Pill & Features */}
+                    <div className="flex items-center gap-2 mb-4 flex-wrap">
+                      <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/70 text-xs font-medium">
+                        {project.category}
+                      </span>
+                      <span className="text-xs text-white/40 font-mono">
+                        • {project.featuresCount}
+                      </span>
+                    </div>
+
+                    {/* Line 3: Description */}
+                    <p className="text-sm text-white/50 leading-relaxed line-clamp-3">
+                      {project.desc}
+                    </p>
                   </div>
-                  <div className="w-1 h-1 rounded-full bg-white/20"></div>
-                  <span className="text-xs text-white/40 font-mono">
-                    {project.features}
-                  </span>
                 </div>
 
-                {/* Description */}
-                <p className="text-sm text-white/50 leading-relaxed">
-                  {project.desc}
-                </p>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
