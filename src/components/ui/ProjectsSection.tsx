@@ -3,8 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
-import { Smartphone, Activity, ArrowUpRight } from 'lucide-react';
+import { Activity, ArrowUpRight, Sparkles } from 'lucide-react';
 
 const projects = [
   {
@@ -104,11 +103,11 @@ export default function ProjectsSection() {
                 {/* Card Image / Banner Top */}
                 <div className="w-full h-56 md:h-64 relative overflow-hidden bg-[#050508]">
                   {project.type === 'image' && project.image ? (
-                    <Image
+                    /* Robust img tag ensuring instant preview reload across browsers */
+                    <img
                       src={project.image}
                       alt={project.title}
-                      fill
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     />
                   ) : project.type === 'gradient-green' ? (
                     <div className="w-full h-full bg-gradient-to-br from-emerald-600 to-green-900 p-6 flex flex-col justify-between relative overflow-hidden">
