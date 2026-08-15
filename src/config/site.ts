@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "XNITH Solutions",
+  name: "XENITH Solutions",
   description: "Modern technology and digital solutions for a connected world.",
   url: "https://xnith-solutions.com",
   mainNav: [

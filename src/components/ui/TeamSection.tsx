@@ -11,9 +11,9 @@ const leaders = [
     image: '/faiz.png',
   },
   {
-    name: 'Swera Sagheer',
+    name: 'Sawera Saghir',
     title: 'Co-Founder & Creative Lead',
-    image: '/swera.jpg',
+    image: '/sweraa.jpg',
   },
 ];
 

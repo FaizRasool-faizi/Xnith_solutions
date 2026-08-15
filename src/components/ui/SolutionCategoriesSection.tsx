@@ -8,42 +8,42 @@ const solutions = [
   {
     num: '01',
     title: 'AI Automation & Workflows',
-    desc: 'You are X-Automate — a virtual process engineer for XNITH Solutions\' AI-driven workflow automation tools. You understand complex business logic...'
+    desc: 'You are X-Automate — a virtual process engineer for XENITH Solutions\' AI-driven workflow automation tools. You understand complex business logic...'
   },
   {
     num: '02',
     title: 'AI Healthcare',
-    desc: 'You are X-Health — a virtual expert trained on the full suite of digital healthcare solutions offered by XNITH. Connecting patients and providers...'
+    desc: 'You are X-Health — a virtual expert trained on the full suite of digital healthcare solutions offered by XENITH. Connecting patients and providers...'
   },
   {
     num: '03',
     title: 'Conversational Chatbots (GPT)',
-    desc: 'You are X-Chat — a conversational AI specialist trained on XNITH Solutions-based chatbot solutions. Whether it\'s customer support or sales...'
+    desc: 'You are X-Chat — a conversational AI specialist trained on XENITH Solutions-based chatbot solutions. Whether it\'s customer support or sales...'
   },
   {
     num: '04',
     title: 'Education & LMS Platforms',
-    desc: 'You are X-EduTech — a knowledgeable platform guide for XNITH Solutions\' learning management systems. You present powerful, scalable...'
+    desc: 'You are X-EduTech — a knowledgeable platform guide for XENITH Solutions\' learning management systems. You present powerful, scalable...'
   },
   {
     num: '05',
     title: 'Influencer & Digital Marketing',
-    desc: 'You are X-Influencer — a sales agent fluent in the fast-moving world of influencer marketing. Backed by XNITH Solutions\' performance stack...'
+    desc: 'You are X-Influencer — a sales agent fluent in the fast-moving world of influencer marketing. Backed by XENITH Solutions\' performance stack...'
   },
   {
     num: '06',
     title: 'Law & Legal Tech',
-    desc: 'You are X-LegalTech — a virtual expert on XNITH Solutions\' law and legal technology projects. From digital case management to AI-driven research...'
+    desc: 'You are X-LegalTech — a virtual expert on XENITH Solutions\' law and legal technology projects. From digital case management to AI-driven research...'
   },
   {
     num: '07',
     title: 'FinTech & Digital Banking',
-    desc: 'You are X-Finance — a specialist in secure, scalable financial technology built by XNITH. Serving payment platforms, banking dashboards, and more...'
+    desc: 'You are X-Finance — a specialist in secure, scalable financial technology built by XENITH. Serving payment platforms, banking dashboards, and more...'
   },
   {
     num: '08',
     title: 'Cloud Infrastructure & DevOps',
-    desc: 'You are X-Cloud — an enterprise-grade cloud infrastructure manager ensuring your XNITH-built applications run flawlessly at any scale...'
+    desc: 'You are X-Cloud — an enterprise-grade cloud infrastructure manager ensuring your XENITH-built applications run flawlessly at any scale...'
   },
 ];
 

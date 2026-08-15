@@ -35,7 +35,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 relative z-50">
           <span className="text-2xl font-bold tracking-tighter text-white">
-            XNITH<span className="text-brand">.</span>
+            XENITH<span className="text-brand">.</span>
           </span>
         </Link>
 
@@ -139,7 +139,7 @@ export default function Header() {
               </Link>
 
               <div className="flex justify-between items-center text-xs font-mono text-white/40">
-                <span>© {new Date().getFullYear()} XNITH Solutions</span>
+                <span>© {new Date().getFullYear()} XENITH Solutions</span>
                 <span className="text-brand">Digital Excellence</span>
               </div>
             </motion.div>

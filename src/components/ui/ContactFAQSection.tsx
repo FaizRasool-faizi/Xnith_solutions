@@ -10,7 +10,7 @@ const faqs = [
     answer: "Following our initial discovery conversation and requirements alignment, we typically initiate project discovery workshops within 3 to 5 business days and assemble dedicated engineering pods within 1 to 2 weeks."
   },
   {
-    question: "What engagement models does XNITH support?",
+    question: "What engagement models does XENITH support?",
     answer: "We support three primary models: (1) End-to-End Product Engineering for fixed deliverables, (2) Dedicated AI & Engineering Team Augmentation to embed directly into your sprint cycles, and (3) Strategic AI Advisory for governance and architecture roadmaps."
   },
   {
@@ -18,7 +18,7 @@ const faqs = [
     answer: "All intellectual property produced under contract belongs 100% to our clients upon creation. We execute strict enterprise NDAs, use SOC-2 compliant secure infrastructure, and ensure AI models are never trained on your private telemetry."
   },
   {
-    question: "Can XNITH integrate into our existing technology stack?",
+    question: "Can XENITH integrate into our existing technology stack?",
     answer: "Yes. Our systems engineers specialize in modernizing legacy codebases and building seamless API bridges across AWS, GCP, Azure, Kubernetes, custom microservices, and enterprise databases."
   }
 ];

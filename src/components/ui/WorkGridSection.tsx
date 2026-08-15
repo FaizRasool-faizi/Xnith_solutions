@@ -21,13 +21,13 @@ export interface Project {
 const allProjects: Project[] = [
   {
     id: 1,
-    title: 'XNITH Learn LMS',
+    title: 'XENITH Learn LMS',
     client: 'EduGlobal Enterprise',
     category: 'Enterprise & LMS',
     status: 'Active & Scaling',
     impactMetric: '150,000+ Active Learners',
     desc: 'An AI-powered learning management ecosystem with intelligent skill tracking, automated grading, and personalized course paths.',
-    fullOverview: 'XNITH Learn was designed to modernize enterprise training across multi-regional corporate teams. By combining continuous skill assessments with automated agent tutors, the platform reduced course completion times by 40% while boosting knowledge retention metrics.',
+    fullOverview: 'XENITH Learn was designed to modernize enterprise training across multi-regional corporate teams. By combining continuous skill assessments with automated agent tutors, the platform reduced course completion times by 40% while boosting knowledge retention metrics.',
     techStack: ['Next.js 14', 'TypeScript', 'TailwindCSS', 'Python FastAPI', 'PostgreSQL'],
     features: ['Adaptive AI Learning Paths', 'Real-time Analytics Dashboard', 'Bilingual Support (EN/AR)', 'Gamified Certifications'],
     type: 'dashboard'

@@ -7,56 +7,56 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "We have spent the past year working with the XNITH team and can't say enough about their dedication in getting the job done correctly.",
+    quote: "We have spent the past year working with the XENITH team and can't say enough about their dedication in getting the job done correctly.",
     name: "Kamran Wussinu",
     title: "Group Head, EBS",
     avatar: "KW"
   },
   {
     id: 2,
-    quote: "Had an amazing experience with the XNITH team, extremely professional and ahead of schedule. We'll be working together going forward.",
+    quote: "Had an amazing experience with the XENITH team, extremely professional and ahead of schedule. We'll be working together going forward.",
     name: "Bonele Mfeketo",
     title: "Managing Partner & Chief Developer",
     avatar: "BM"
   },
   {
     id: 3,
-    quote: "Highly Recommended!!! Working with XNITH Solutions was such a fantastic experience. Expect top-notch service when working with this team.",
+    quote: "Highly Recommended!!! Working with XENITH Solutions was such a fantastic experience. Expect top-notch service when working with this team.",
     name: "Shareefa Hamilton",
     title: "CEO, Woosah Wellness LLC",
     avatar: "SH"
   },
   {
     id: 4,
-    quote: "The team at XNITH understood our vision from day one and delivered a product that exceeded every expectation. Truly world-class work.",
+    quote: "The team at XENITH understood our vision from day one and delivered a product that exceeded every expectation. Truly world-class work.",
     name: "Daniel Osei",
     title: "CTO, NovaBridge Technologies",
     avatar: "DO"
   },
   {
     id: 5,
-    quote: "XNITH transformed our legacy systems into a seamless, modern platform. Their engineers are brilliant and the communication was flawless.",
+    quote: "XENITH transformed our legacy systems into a seamless, modern platform. Their engineers are brilliant and the communication was flawless.",
     name: "Priya Mehta",
     title: "VP Engineering, Orbix Fintech",
     avatar: "PM"
   },
   {
     id: 6,
-    quote: "From discovery to launch in under 90 days. I didn't think it was possible until XNITH made it happen. An exceptional team through and through.",
+    quote: "From discovery to launch in under 90 days. I didn't think it was possible until XENITH made it happen. An exceptional team through and through.",
     name: "Luca Ferrante",
     title: "Founder, PulseHealth",
     avatar: "LF"
   },
   {
     id: 7,
-    quote: "XNITH's AI-driven approach to building our analytics engine cut our time-to-insight by 60%. The ROI was immediately visible.",
+    quote: "XENITH's AI-driven approach to building our analytics engine cut our time-to-insight by 60%. The ROI was immediately visible.",
     name: "Amara Nwosu",
     title: "Head of Data, ClearPath Analytics",
     avatar: "AN"
   },
   {
     id: 8,
-    quote: "What sets XNITH apart is their ability to think like a product owner, not just a developer. They care about outcomes, not just output.",
+    quote: "What sets XENITH apart is their ability to think like a product owner, not just a developer. They care about outcomes, not just output.",
     name: "James Caldwell",
     title: "CEO, GridForge Infrastructure",
     avatar: "JC"

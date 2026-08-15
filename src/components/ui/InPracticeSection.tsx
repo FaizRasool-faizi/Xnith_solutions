@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function InPracticeSection() {
   const terminalLines = [
-    { text: "$ XNITH deployment process", type: "command" },
+    { text: "$ XENITH deployment process", type: "command" },
     { text: "✓ Requirements mapped", type: "success" },
     { text: "✓ Architecture designed", type: "success" },
     { text: "✓ Systems engineered & tested", type: "success" },
@@ -39,7 +39,7 @@ export default function InPracticeSection() {
               <div className="flex items-center gap-3 px-6 py-4 bg-[#111] border-b border-white/5">
                 <div className="w-3 h-3 rounded-full bg-brand shadow-[0_0_8px_#F569FF]"></div>
                 <div className="font-mono text-xs tracking-widest text-white/40 uppercase">
-                  XNITH · deployment process
+                  XENITH · deployment process
                 </div>
               </div>
               

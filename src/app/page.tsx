@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between gap-12 mt-4">
             <div className="flex max-w-2xl flex-col gap-8">
               <p className="text-lg text-white/60 sm:text-xl leading-relaxed">
-                XNITH is a premium digital product agency. We help organizations discover where technology creates value, then design, architect, and scale it. We build comprehensive ecosystems of digital platforms.
+                XENITH is a premium digital product agency. We help organizations discover where technology creates value, then design, architect, and scale it. We build comprehensive ecosystems of digital platforms.
               </p>
               
               <div className="flex items-center gap-4 font-mono text-sm tracking-widest text-brand uppercase">

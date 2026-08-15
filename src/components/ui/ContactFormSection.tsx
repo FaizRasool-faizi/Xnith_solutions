@@ -73,7 +73,7 @@ export default function ContactFormSection() {
                 Start a conversation.
               </h2>
               <p className="text-white/60 text-base leading-relaxed mb-10">
-                Have a project in mind or want to explore how XNITH can build your digital ecosystem? Reach out directly or fill out the form.
+                Have a project in mind or want to explore how XENITH can build your digital ecosystem? Reach out directly or fill out the form.
               </p>
 
               {/* Direct Info Cards */}
@@ -149,7 +149,7 @@ export default function ContactFormSection() {
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-3">Message Received!</h3>
                   <p className="text-white/60 max-w-md mb-8 leading-relaxed">
-                    Thank you for reaching out. A senior partner from the XNITH team will review your inquiry and connect with you within 24 hours.
+                    Thank you for reaching out. A senior partner from the XENITH team will review your inquiry and connect with you within 24 hours.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}

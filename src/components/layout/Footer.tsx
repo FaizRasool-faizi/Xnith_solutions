@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex flex-col items-center md:items-start gap-2">
           <span className="text-2xl font-bold tracking-tighter text-white">
-            XNITH<span className="text-brand">.</span>
+            XENITH<span className="text-brand">.</span>
           </span>
           <p className="text-sm text-white/50 max-w-xs text-center md:text-left">
             {siteConfig.description}

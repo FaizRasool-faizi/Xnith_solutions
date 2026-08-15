@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "XNITH Solutions | Digital Excellence",
+  title: "XENITH Solutions | Digital Excellence",
   description: "Modern technology and digital solutions for a connected world.",
 };
 
