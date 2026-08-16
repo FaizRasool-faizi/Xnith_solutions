@@ -10,9 +10,9 @@ export const siteConfig = {
     { title: "Contact", href: "/contact" },
   ],
   companyInfo: {
-    email: "hello@xnith-solutions.com",
-    phone: "+1 (555) 123-4567",
-    address: "123 Tech Boulevard, Innovation District, CA 94103",
+    email: "sawerasaghir30@gmail.com",
+    phone: "03174804970",
+    address: "Lahore, Pakistan",
   },
   // We can easily expand this config to include portfolio items, service details, etc.
 };

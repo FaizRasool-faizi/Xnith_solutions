@@ -29,14 +29,15 @@ const projects = [
     type: 'image'
   },
   {
-    id: 'almana',
-    title: 'Almana | المانع',
-    slug: '/work',
-    status: 'Active',
-    category: 'AI Healthcare',
-    featuresCount: '10 Features',
-    desc: 'Almana Health Compass is a bilingual healthcare mobile application connecting patients to hospital networks...',
-    type: 'gradient-teal'
+    id: 'auratalk',
+    title: 'AuraTalk AI',
+    slug: '/work/auratalk',
+    status: 'Active / Beta',
+    category: 'CUDA-Accelerated Real-Time AI Avatar & Video Call Platform',
+    featuresCount: '12 Core Modules · 5 AI Avatars',
+    desc: 'An intelligent, real-time AI video call assistant platform featuring CUDA-powered Wav2Lip neural lip-sync, emotion tracking computer vision, and context-aware LLM intelligence.',
+    image: '/AIAvatar.jpg',
+    type: 'image'
   }
 ];
 

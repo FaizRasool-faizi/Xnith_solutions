@@ -47,16 +47,16 @@ const allProjects: Project[] = [
   },
   {
     id: 3,
-    title: 'OmniHealth Compass',
-    client: 'Almana Health Network',
-    category: 'Healthcare Tech',
-    status: 'Active in 12 Hospitals',
-    impactMetric: '99.9% Uptime Compliance',
-    desc: 'A bilingual patient portal and telemedicine mobile application connecting patients to specialists and instant diagnostic reports.',
-    fullOverview: 'OmniHealth Compass unifies electronic health records, video consultations, and instant prescription fulfillment into one secure mobile interface built under strict HIPAA compliance.',
-    techStack: ['React Native', 'Node.js', 'GraphQL', 'HIPAA Secure Vault', 'Redis'],
-    features: ['HD Video Telehealth', 'Bilingual EHR Access', 'Instant E-Prescriptions', 'Automated Appointment Reminders'],
-    type: 'mobile'
+    title: 'AuraTalk AI',
+    client: 'XENITH AI Ecosystem',
+    category: 'AI & Intelligence',
+    status: 'In Development / Beta',
+    impactMetric: '12+ Core Modules · 5 Avatars',
+    desc: 'An intelligent, real-time AI video call assistant platform featuring CUDA-powered Wav2Lip neural lip-sync, emotion tracking computer vision, and context-aware LLM intelligence.',
+    fullOverview: 'AuraTalk AI is an enterprise-grade, real-time interactive video assistant platform that replicates a human video call experience. It blends cutting-edge computer vision, deep neural lip-synchronization, and local Large Language Models (LLM) to deliver empathetic, expressive, and context-aware conversations.',
+    techStack: ['PyTorch CUDA', 'Wav2Lip', 'MediaPipe', 'Local Llama 3', 'FastAPI WebSockets'],
+    features: ['CUDA Neural Lip-Sync', 'MediaPipe Emotion Tracking', 'Contextual LLM Memory', 'Multi-Persona Avatars (5)', 'WebAudio VAD & Glassmorphic UI'],
+    type: 'ai'
   },
   {
     id: 4,

@@ -84,8 +84,8 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <p className="text-xs font-mono text-white/40 uppercase mb-1">EMAIL US</p>
-                    <a href="mailto:hello@xnith-solutions.com" className="text-white font-semibold hover:text-brand transition-colors text-base">
-                      hello@xnith-solutions.com
+                    <a href="mailto:sawerasaghir30@gmail.com" className="text-white font-semibold hover:text-brand transition-colors text-base">
+                      sawerasaghir30@gmail.com
                     </a>
                   </div>
                 </div>
@@ -96,8 +96,8 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <p className="text-xs font-mono text-white/40 uppercase mb-1">CALL US</p>
-                    <a href="tel:+15551234567" className="text-white font-semibold hover:text-brand transition-colors text-base">
-                      +1 (555) 123-4567
+                    <a href="tel:03174804970" className="text-white font-semibold hover:text-brand transition-colors text-base">
+                      03174804970
                     </a>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function ContactFormSection() {
                   <div>
                     <p className="text-xs font-mono text-white/40 uppercase mb-1">HEADQUARTERS</p>
                     <p className="text-white font-semibold text-base">
-                      Innovation District, CA & Global Remote
+                      Lahore, Pakistan
                     </p>
                   </div>
                 </div>
