@@ -15,9 +15,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { siteConfig } from "@/config/site";
+
 export const metadata: Metadata = {
-  title: "XENITH Solutions | Digital Excellence",
-  description: "Modern technology and digital solutions for a connected world.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

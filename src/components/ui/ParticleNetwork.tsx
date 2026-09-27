@@ -13,7 +13,7 @@ export default function ParticleNetwork() {
 
     let particles: Particle[] = [];
     let animationFrameId: number;
-    let mouse = { x: -1000, y: -1000 };
+    const mouse = { x: -1000, y: -1000 };
 
     const resize = () => {
       const parent = canvas.parentElement;

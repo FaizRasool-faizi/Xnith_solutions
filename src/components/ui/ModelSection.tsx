@@ -45,7 +45,7 @@ export default function ModelSection() {
             One mission. <br />
             Two ways we deliver.
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl">
+          <p className="text-lg text-zinc-300 max-w-2xl font-normal leading-relaxed">
             Most agencies either consult on strategy, or simply write code. <br className="hidden sm:block" />
             We do both, and each makes the other stronger.
           </p>
@@ -60,54 +60,56 @@ export default function ModelSection() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
         >
           {/* Engine 01 */}
-          <motion.div variants={itemVariants} className="flex flex-col justify-between bg-[#0a0a0a] border border-white/5 rounded-3xl p-8 md:p-12 hover:border-white/10 transition-colors">
+          <motion.div variants={itemVariants} className="flex flex-col justify-between bg-[#0a0a14] border border-zinc-800 rounded-3xl p-8 md:p-12 hover:border-brand/50 transition-all shadow-xl">
             <div>
-              <div className="text-[10px] tracking-[0.2em] font-mono text-white/40 uppercase mb-6">
+              <div className="text-[10px] tracking-[0.2em] font-mono text-brand uppercase mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand"></span>
                 ENGINE 01
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                The Studio
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Client Engineering Studio
               </h3>
-              <p className="text-xl text-white/70 mb-8 font-medium">
-                We build custom digital solutions for you.
+              <p className="text-lg text-zinc-200 mb-4 font-semibold">
+                Custom software engineered for specific business problems.
               </p>
-              <p className="text-white/50 leading-relaxed mb-12">
-                As your partner, we help you discover where technology creates value, then design, architect, and scale intelligent products, applications, and systems, or embed native talent straight into your team.
+              <p className="text-zinc-300 leading-relaxed mb-8 text-sm sm:text-base font-normal">
+                We partner with startups, SMEs, and ambitious businesses to design, architect, and deploy custom web applications, AI systems, SaaS platforms, and intelligent workflows.
               </p>
             </div>
             <Link href="/services" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-white transition-colors group">
-              Explore what we do
+              Explore client services
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </Link>
           </motion.div>
 
           {/* Engine 02 */}
-          <motion.div variants={itemVariants} className="flex flex-col justify-between bg-[#0a0a0a] border border-white/5 rounded-3xl p-8 md:p-12 hover:border-white/10 transition-colors">
+          <motion.div variants={itemVariants} className="flex flex-col justify-between bg-[#0a0a14] border border-zinc-800 rounded-3xl p-8 md:p-12 hover:border-brand/50 transition-all shadow-xl">
             <div>
-              <div className="text-[10px] tracking-[0.2em] font-mono text-white/40 uppercase mb-6">
+              <div className="text-[10px] tracking-[0.2em] font-mono text-brand uppercase mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand"></span>
                 ENGINE 02
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                The Ecosystem
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Proprietary Product Lab
               </h3>
-              <p className="text-xl text-white/70 mb-8 font-medium">
-                We build software products of our own.
+              <p className="text-lg text-zinc-200 mb-4 font-semibold">
+                Our own software experiments and deployed platforms.
               </p>
-              <p className="text-white/50 leading-relaxed mb-12">
-                As product builders, we've created a growing family of proprietary digital platforms across productivity, growth, communication, and business. Live, in market, and scaling.
+              <p className="text-zinc-300 leading-relaxed mb-8 text-sm sm:text-base font-normal">
+                As software builders, we actively engineer and launch our own digital products—exploring cutting-edge technologies like real-time neural lip-sync, interactive 3D WebGL, and autonomous AI agents.
               </p>
             </div>
-            <Link href="/ecosystem" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-white transition-colors group">
-              Explore the ecosystem
+            <Link href="/work" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-white transition-colors group">
+              Explore our products
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </Link>
           </motion.div>
           
           {/* Banner */}
           <motion.div variants={itemVariants} className="md:col-span-2 mt-2">
-            <div className="bg-gradient-to-r from-brand/5 via-[#111] to-brand/5 border border-white/10 rounded-2xl p-8 text-center shadow-[inset_0_0_40px_rgba(245,105,255,0.03)] hover:border-brand/30 transition-colors">
-              <h4 className="text-xl md:text-2xl font-semibold text-white">
-                The strongest proof of what we can build for you is what we've already built for ourselves.
+            <div className="bg-gradient-to-r from-brand/10 via-[#0e0e1a] to-brand/10 border border-zinc-700/80 rounded-2xl p-8 text-center shadow-[inset_0_0_40px_rgba(245,105,255,0.05)] hover:border-brand/40 transition-colors">
+              <h4 className="text-xl md:text-2xl font-semibold text-zinc-100">
+                The strongest proof of what we can build is what we have already built.
               </h4>
             </div>
           </motion.div>

@@ -35,7 +35,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 relative z-50">
           <span className="text-2xl font-bold tracking-tighter text-white">
-            XENITH<span className="text-brand">.</span>
+            XNITH<span className="text-brand">.</span>
           </span>
         </Link>
 
@@ -48,7 +48,7 @@ export default function Header() {
                 key={item.href} 
                 href={item.href}
                 className={`transition-colors duration-200 ${
-                  isActive ? 'text-brand font-semibold' : 'text-white/70 hover:text-brand'
+                  isActive ? 'text-brand font-semibold' : 'text-zinc-300 hover:text-white hover:text-brand'
                 }`}
               >
                 {item.title}
@@ -61,9 +61,9 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="hidden md:inline-flex h-10 items-center justify-center rounded-full bg-brand px-6 text-sm font-medium text-black transition-transform hover:scale-105"
+            className="hidden md:inline-flex h-11 items-center justify-center rounded-xl bg-brand px-6 text-sm font-bold text-black transition-all hover:bg-brand/90 hover:scale-[1.02] shadow-[0_0_20px_rgba(245,105,255,0.25)]"
           >
-            Get Started
+            Start a Project
           </Link>
 
           {/* Mobile Hamburger Button */}
@@ -111,11 +111,11 @@ export default function Header() {
                         href={item.href}
                         onClick={() => setIsOpen(false)}
                         className={`text-2xl font-bold tracking-tight flex items-center justify-between py-2 border-b border-white/5 transition-colors ${
-                          isActive ? 'text-brand' : 'text-white/80 hover:text-white'
+                          isActive ? 'text-brand' : 'text-zinc-100 hover:text-brand'
                         }`}
                       >
                         <span>{item.title}</span>
-                        <ArrowRight className={`w-5 h-5 transition-transform ${isActive ? 'text-brand translate-x-1' : 'text-white/20'}`} />
+                        <ArrowRight className={`w-5 h-5 transition-transform ${isActive ? 'text-brand translate-x-1' : 'text-zinc-400'}`} />
                       </Link>
                     </motion.div>
                   );
@@ -135,12 +135,12 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
                 className="w-full h-14 rounded-xl bg-brand text-black font-bold text-sm tracking-wide flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(245,105,255,0.3)]"
               >
-                Get Started <ArrowRight className="w-4 h-4" />
+                Start a Project <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <div className="flex justify-between items-center text-xs font-mono text-white/40">
-                <span>© {new Date().getFullYear()} XENITH Solutions</span>
-                <span className="text-brand">Digital Excellence</span>
+              <div className="flex justify-between items-center text-xs font-mono text-zinc-400">
+                <span>© {new Date().getFullYear()} XNITH Solutions</span>
+                <span className="text-brand">AI & Software Engineering</span>
               </div>
             </motion.div>
 

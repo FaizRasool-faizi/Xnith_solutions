@@ -1,20 +1,33 @@
+const getBaseUrl = (): string => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/+$/, '');
+  }
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return 'https://xnith-solutions.vercel.app';
+};
+
 export const siteConfig = {
-  name: "XENITH Solutions",
-  description: "Modern technology and digital solutions for a connected world.",
-  url: "https://xnith-solutions.com",
+  name: "XNITH Solutions",
+  title: "XNITH Solutions | AI Software Development & Custom Digital Platforms",
+  description: "XNITH Solutions builds custom AI software, web applications, SaaS platforms, and intelligent digital products for businesses and startups.",
+  url: getBaseUrl(),
   mainNav: [
     { title: "Home", href: "/" },
-    { title: "About Us", href: "/about" },
+    { title: "Work", href: "/work" },
     { title: "Services", href: "/services" },
-    { title: "Portfolio", href: "/portfolio" },
+    { title: "About", href: "/about" },
     { title: "Contact", href: "/contact" },
   ],
   companyInfo: {
-    email: "sawerasaghir30@gmail.com",
-    phone: "03174804970",
+    email: "contact@xnith-solutions.com",
+    phone: "+92 317 4804970",
     address: "Lahore, Pakistan",
   },
-  // We can easily expand this config to include portfolio items, service details, etc.
 };
 
 export type SiteConfig = typeof siteConfig;

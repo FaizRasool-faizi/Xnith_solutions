@@ -21,10 +21,10 @@ export default function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="relative flex flex-col items-center text-center rounded-3xl border border-white/8 bg-[#070712] overflow-hidden py-24 px-8 md:px-16"
+          className="relative flex flex-col items-center text-center rounded-3xl border border-zinc-700/80 bg-[#090916] overflow-hidden py-24 px-8 md:px-16 shadow-[0_0_80px_rgba(245,105,255,0.08)]"
         >
           {/* Inner glow overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-brand/5 via-transparent to-violet-900/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand/8 via-transparent to-violet-900/15 pointer-events-none" />
 
           {/* Label */}
           <motion.div
@@ -35,7 +35,8 @@ export default function CTASection() {
             className="flex items-center gap-4 text-xs font-semibold tracking-widest text-brand uppercase mb-8 relative z-10"
           >
             <span className="h-[1px] w-8 bg-brand"></span>
-            THE FUTURE WE'RE BUILDING
+            START A CONVERSATION
+            <span className="h-[1px] w-8 bg-brand"></span>
           </motion.div>
 
           {/* Main Heading */}
@@ -44,9 +45,9 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] max-w-4xl mb-8 relative z-10"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15] max-w-3xl mb-6 relative z-10"
           >
-            We don't just advise on technology. We build it, ship it, and scale it, for you, and for the world.
+            Have a product idea worth building?
           </motion.h2>
 
           {/* Subtitle */}
@@ -55,9 +56,9 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base md:text-lg text-white/50 leading-relaxed max-w-lg mb-14 relative z-10"
+            className="text-base md:text-lg text-zinc-200 leading-relaxed max-w-xl mb-12 relative z-10 font-normal"
           >
-            Whether you're an enterprise, a founder, or an investor. Let's build your part of the future.
+            Tell us what you&apos;re building, what problem you&apos;re solving, and where you need engineering support.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -70,17 +71,18 @@ export default function CTASection() {
           >
             <Link
               href="/contact"
-              className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-brand text-black font-bold text-sm tracking-wide transition-all hover:bg-brand/90 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_30px_rgba(245,105,255,0.3)]"
+              className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-brand text-black font-bold text-sm tracking-wide transition-all hover:bg-brand/90 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_35px_rgba(245,105,255,0.35)]"
             >
               Start a Project
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </Link>
 
             <Link
-              href="/services"
-              className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-medium text-sm tracking-wide transition-all hover:bg-white/10 hover:border-white/20"
+              href="/work"
+              className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-zinc-900 border border-zinc-600 text-zinc-100 font-semibold text-sm tracking-wide transition-all hover:bg-zinc-800 hover:border-brand shadow-md"
             >
-              Explore the Ecosystem
+              Explore Our Work
+              <span className="transition-transform group-hover:translate-x-1 text-brand">→</span>
             </Link>
           </motion.div>
 
