@@ -51,9 +51,9 @@ export default function AboutHero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.0] mb-10 max-w-3xl"
         >
-          From software to<br />
-          an AI{' '}
-          <span className="text-brand">ecosystem.</span>
+          Engineering software &<br />
+          applied AI{' '}
+          <span className="text-brand">platforms.</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -63,7 +63,7 @@ export default function AboutHero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg md:text-xl text-white/50 leading-relaxed max-w-xl"
         >
-          We are not simply building software. We are building the future of human potential.
+          XENITH Solutions is a software and AI engineering studio focused on building custom web applications, SaaS products, AI-powered systems, and digital platforms.
         </motion.p>
 
       </div>

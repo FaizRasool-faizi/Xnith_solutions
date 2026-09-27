@@ -24,13 +24,13 @@ const keyModules = [
     icon: Zap,
     badge: "Module 01",
     title: "CUDA-Accelerated Neural Lip-Sync Engine",
-    desc: "Integrates PyTorch and custom CUDA-optimized Wav2Lip inference pipeline. Generates pixel-perfect mouth movement aligned frame-by-frame with synthesized audio at real-time speeds."
+    desc: "Integrates PyTorch and custom CUDA-optimized Wav2Lip inference pipeline. Generates synchronized facial animation aligned frame-by-frame with synthesized audio using CUDA acceleration."
   },
   {
     icon: Eye,
     badge: "Module 02",
     title: "Procedural Micro-Animation & Lifetime Engine",
-    desc: "Prevents static/frozen image artifacts through dynamic facial micro-sway, organic breathing, and natural sub-second eyelid blinks. Dynamic landmark-aware mesh alignment guarantees zero texture bleed."
+    desc: "Procedural micro-animation introducing natural facial sway, breathing cycles, and blink intervals with dynamic landmark-aware mesh alignment."
   },
   {
     icon: Smile,
@@ -42,7 +42,7 @@ const keyModules = [
     icon: Brain,
     badge: "Module 04",
     title: "Emotion-Contextual LLM Memory Engine",
-    desc: "Custom Local Llama AI integration with multi-turn conversation memory. Adjusts prompt personality dynamically based on detected user mood for empathetic, human-like responses."
+    desc: "Custom Local Llama AI integration with multi-turn conversation memory. Adjusts conversational context dynamically based on detected user emotional sentiment for relevant, context-aware responses."
   },
   {
     icon: Users,
@@ -126,8 +126,8 @@ export default function AuraTalkDetailSection() {
           {/* Quick Specs Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-sm">
             <div>
-              <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">MODULES & AVATARS</p>
-              <p className="text-sm font-semibold text-white mt-1">12+ Core Modules · 5 Personas</p>
+              <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">PROJECT TYPE</p>
+              <p className="text-sm font-semibold text-white mt-1">Internal R&D Prototype</p>
             </div>
             <div>
               <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">NEURAL PIPELINE</p>
@@ -172,10 +172,10 @@ export default function AuraTalkDetailSection() {
             📝 EXECUTIVE SUMMARY
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-snug">
-            Enterprise-grade, real-time interactive video assistant platform that replicates a human video call experience.
+            Interactive video assistant platform built with FastAPI, WebSockets, MediaPipe computer vision, and local LLM inference.
           </h2>
           <p className="text-base md:text-lg text-white/70 leading-relaxed mb-6">
-            AuraTalk AI blends cutting-edge computer vision, deep neural lip-synchronization, and local Large Language Models (LLM) to deliver empathetic, expressive, and context-aware conversations.
+            AuraTalk AI combines computer vision, Wav2Lip neural lip-synchronization, and local Large Language Models (LLM) to deliver dynamic, context-aware conversations.
           </p>
           <p className="text-base md:text-lg text-white/70 leading-relaxed">
             Powered by CUDA-accelerated Wav2Lip neural lip-sync, local LLM intelligence, Edge-TTS audio synthesis, and MediaPipe computer vision for real-time user emotion analysis.

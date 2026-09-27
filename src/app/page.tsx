@@ -118,7 +118,7 @@ export default function Home() {
           <div className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between gap-12 mt-2">
             <div className="flex max-w-3xl flex-col gap-8">
               <p className="text-base sm:text-lg text-zinc-300 leading-relaxed font-normal">
-                XNITH Solutions designs and builds custom web applications, AI-powered software, SaaS platforms, and intelligent digital systems for founders and growing businesses. Whether you need to automate manual operations, launch a new digital product, or integrate AI directly into your business, we engineer reliable technology built around real-world problems.
+                XENITH Solutions designs and builds custom web applications, AI-powered software, SaaS platforms, and intelligent digital systems for founders and growing businesses. Whether you need to automate manual operations, launch a new digital product, or integrate AI directly into your business, we engineer reliable technology built around real-world problems.
               </p>
               
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">

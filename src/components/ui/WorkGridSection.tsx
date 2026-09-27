@@ -3,12 +3,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { Activity, LayoutDashboard, Smartphone, Shield, Cpu, ExternalLink, X, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ExternalLink, X, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export interface Project {
   id: number;
   title: string;
-  client: string;
+  projectType: string;
   category: string;
   status: string;
   impactMetric: string;
@@ -16,92 +16,52 @@ export interface Project {
   fullOverview: string;
   techStack: string[];
   features: string[];
-  type?: 'dashboard' | 'chart' | 'mobile' | 'security' | 'ai';
-  image?: string;
-  slug?: string;
+  image: string;
+  slug: string;
 }
 
 const allProjects: Project[] = [
   {
     id: 1,
     title: 'Appointix',
-    client: 'Hyperlocal Marketplace',
-    category: 'AI-Powered Local Service & Marketplace',
-    status: 'Active',
-    impactMetric: '8 Core Modules',
-    desc: 'An intelligent, AI-driven hyperlocal marketplace connecting households with verified local service experts (plumbers, electricians, mechanics)...',
-    fullOverview: 'Appointix is an intelligent AI appointment and service marketplace connecting local service experts with verified clients. Built with Gemini AI, Next.js 14, and Expo React Native, it automates request parsing, expert ranking, and real-time scheduling.',
+    projectType: 'Proprietary Product',
+    category: 'AI-Powered Local Service Marketplace',
+    status: 'Active Prototype',
+    impactMetric: '8 Functional Modules',
+    desc: 'An intelligent marketplace connecting households with verified local service experts. Features automated request parsing, proximity ranking, and real-time scheduling.',
+    fullOverview: 'Appointix is an AI-powered local appointment and service marketplace. Built with Gemini AI, Next.js 14, and Expo React Native, it parses user requests, evaluates proximity, and coordinates real-time bookings.',
     techStack: ['Gemini AI', 'Next.js 14', 'TypeScript', 'Expo React Native', 'TailwindCSS'],
-    features: ['Gemini AI Auto-Match', 'Real-time Booking & Scheduling', 'Verified Expert Ranking', 'Cross-Platform Mobile App'],
+    features: ['Gemini AI Intent Parsing', 'Real-time Scheduling', 'Proximity Ranking', 'Cross-Platform Mobile App'],
     image: '/appointix.jpeg',
     slug: '/work/appointix'
   },
   {
     id: 2,
     title: 'Petstan',
-    client: 'Multi-Vendor E-Commerce',
+    projectType: 'Proprietary E-Commerce Platform',
     category: '3D Interactive Multi-Vendor Pet Marketplace',
-    status: 'Active',
-    impactMetric: '10+ Core Modules',
-    desc: 'Petstan is a modern, high-performance e-commerce platform specifically built for buying, selling, and adopting pets, pet food, and accessories across Pakistan...',
-    fullOverview: 'Petstan is Pakistan premier 3D interactive multi-vendor pet marketplace built with Next.js 14, Three.js, React 18, and Zustand. It bridges buyers and verified breeders via interactive 3D hero showcases, health vaults, and seller dashboard analytics.',
+    status: 'Active Prototype',
+    impactMetric: 'Interactive 3D WebGL',
+    desc: 'A modern e-commerce platform specifically built for buying, selling, and adopting pets, pet food, and accessories across Pakistan.',
+    fullOverview: 'Petstan is a 3D interactive multi-vendor pet marketplace built with Next.js 14, Three.js, React 18, and Zustand. It connects buyers with verified breeders via interactive 3D hero showcases, health verification tracking, and seller dashboard analytics.',
     techStack: ['Next.js 14', 'Three.js', 'React Three Fiber', 'Zustand', 'PostgreSQL'],
-    features: ['3D Interactive Hero Experience', 'Multi-Criteria Search & Filtering', 'Seller Analytics Workspace', 'Escrow Delivery Protection'],
+    features: ['3D Interactive Hero Experience', 'Multi-Criteria Search & Filtering', 'Seller Analytics Workspace', 'Order Tracking Workflow'],
     image: '/petstan.jpeg',
     slug: '/work/petstan'
   },
   {
     id: 3,
     title: 'AuraTalk AI',
-    client: 'XENITH AI Ecosystem',
-    category: 'CUDA-Accelerated Real-Time AI Avatar & Video Call Platform',
+    projectType: 'Internal R&D Prototype',
+    category: 'CUDA-Accelerated Real-Time AI Avatar Platform',
     status: 'Active / Beta',
-    impactMetric: '12 Core Modules · 5 AI Avatars',
-    desc: 'An intelligent, real-time AI video call assistant platform featuring CUDA-powered Wav2Lip neural lip-sync, emotion tracking computer vision, and context-aware LLM intelligence.',
-    fullOverview: 'AuraTalk AI is an enterprise-grade, real-time interactive video assistant platform that replicates a human video call experience. It blends cutting-edge computer vision, deep neural lip-synchronization, and local Large Language Models (LLM) to deliver empathetic, expressive, and context-aware conversations.',
+    impactMetric: '7 Real-Time Modules · 5 Personas',
+    desc: 'An interactive video assistant platform featuring CUDA-powered Wav2Lip neural lip-sync, MediaPipe facial emotion tracking, and local LLM context.',
+    fullOverview: 'AuraTalk AI is an interactive video assistant platform built with FastAPI, WebSockets, MediaPipe computer vision, and local LLM inference. It combines computer vision, Wav2Lip neural lip-synchronization, and local language models to deliver dynamic, context-aware conversations.',
     techStack: ['PyTorch CUDA', 'Wav2Lip', 'MediaPipe', 'Local Llama 3', 'FastAPI WebSockets'],
     features: ['CUDA Neural Lip-Sync', 'MediaPipe Emotion Tracking', 'Contextual LLM Memory', 'Multi-Persona Avatars (5)', 'WebAudio VAD & Glassmorphic UI'],
     image: '/AIAvatar.jpg',
     slug: '/work/auratalk'
-  },
-  {
-    id: 4,
-    title: 'XENITH Learn LMS',
-    client: 'EduGlobal Enterprise',
-    category: 'Enterprise & LMS',
-    status: 'Active & Scaling',
-    impactMetric: '150,000+ Active Learners',
-    desc: 'An AI-powered learning management ecosystem with intelligent skill tracking, automated grading, and personalized course paths.',
-    fullOverview: 'XENITH Learn was designed to modernize enterprise training across multi-regional corporate teams. By combining continuous skill assessments with automated agent tutors, the platform reduced course completion times by 40% while boosting knowledge retention metrics.',
-    techStack: ['Next.js 14', 'TypeScript', 'TailwindCSS', 'Python FastAPI', 'PostgreSQL'],
-    features: ['Adaptive AI Learning Paths', 'Real-time Analytics Dashboard', 'Bilingual Support (EN/AR)', 'Gamified Certifications'],
-    type: 'dashboard'
-  },
-  {
-    id: 5,
-    title: 'X-Flow Intelligence',
-    client: 'Apex Financial Data',
-    category: 'AI & Intelligence',
-    status: 'Live Production',
-    impactMetric: '60% Faster Data Pipeline',
-    desc: 'A real-time predictive analytics platform converting complex telemetry streams into actionable business intelligence.',
-    fullOverview: 'Engineered for high-frequency telemetry processing, X-Flow Intelligence processes over 10M events per minute. The system automatically detects operational anomalies and recommends proactive interventions before bottlenecks occur.',
-    techStack: ['React', 'Apache Kafka', 'TensorFlow', 'ClickHouse', 'AWS EKS'],
-    features: ['Real-time Anomaly Detection', 'Predictive Market Forecasting', 'Custom WebSockets Stream', 'Exportable BI Reports'],
-    type: 'chart'
-  },
-  {
-    id: 6,
-    title: 'UpTicker AI Coach',
-    client: 'UpTicker Global',
-    category: 'Mobile Apps',
-    status: 'Featured on App Store',
-    impactMetric: '4.9★ Rating (25k+ Reviews)',
-    desc: 'A habit-building and daily productivity mobile app powered by an embedded conversational habit assistant.',
-    fullOverview: 'UpTicker combines behavioral psychology with personalized AI coaching. The mobile application tracks routines, analyzes productivity spikes, and delivers actionable daily micro-coaching advice.',
-    techStack: ['Flutter', 'Dart', 'OpenAI API', 'Firebase', 'Stripe'],
-    features: ['AI Habit Assistant', 'Smart Focus Timers', 'Community Leaderboards', 'Biometric Sync'],
-    type: 'mobile'
   }
 ];
 
@@ -116,11 +76,10 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
     ? allProjects
     : allProjects.filter((p) => {
         const cat = p.category.toUpperCase();
-        if (activeCategory === 'AI & INTELLIGENCE') return cat.includes('AI') || cat.includes('CUDA') || cat.includes('INTELLIGENCE');
-        if (activeCategory === 'ENTERPRISE & LMS') return cat.includes('ENTERPRISE') || cat.includes('LMS');
-        if (activeCategory === 'HEALTHCARE TECH') return cat.includes('HEALTHCARE');
-        if (activeCategory === 'FINTECH & WEB3') return cat.includes('FINTECH') || cat.includes('WEB3');
-        if (activeCategory === 'MOBILE APPS') return cat.includes('MOBILE') || cat.includes('MARKETPLACE');
+        if (activeCategory === 'AI & INTELLIGENCE') return cat.includes('AI') || cat.includes('CUDA');
+        if (activeCategory === '3D & WEBGL') return cat.includes('3D');
+        if (activeCategory === 'MARKETPLACES') return cat.includes('MARKETPLACE');
+        if (activeCategory === 'MOBILE APPS') return p.techStack.includes('Expo React Native') || cat.includes('MOBILE');
         return true;
       });
 
@@ -142,97 +101,13 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
                 onClick={() => setSelectedProject(project)}
                 className="group flex flex-col bg-[#08080c] rounded-2xl overflow-hidden border border-white/10 hover:border-brand/40 transition-all duration-500 cursor-pointer shadow-xl h-full"
               >
-                {/* Header Container: Image or CSS UI Mockup */}
+                {/* Header Container: Project Image */}
                 <div className="w-full h-60 bg-[#050508] relative overflow-hidden flex items-center justify-center">
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                    />
-                  ) : (
-                    <div className="w-full h-full relative overflow-hidden flex items-end justify-center px-8 pt-8">
-                      {/* Grid Pattern */}
-                      <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:20px_20px]"></div>
-                      
-                      {/* Background Glow */}
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-brand/20 blur-[60px] rounded-full group-hover:bg-brand/35 transition-colors duration-500"></div>
-
-                      {/* UI Renderings */}
-                      <div className="w-full h-full relative z-10 translate-y-4 group-hover:translate-y-2 transition-transform duration-500 ease-out flex justify-center">
-                        
-                        {project.type === 'dashboard' && (
-                          <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/15 border-b-0 flex overflow-hidden shadow-2xl">
-                            <div className="w-1/4 h-full border-r border-white/5 bg-[#0a0a0a] p-3 flex flex-col gap-3">
-                              <div className="w-6 h-6 rounded bg-brand/30 flex items-center justify-center"><LayoutDashboard className="w-3.5 h-3.5 text-brand" /></div>
-                              <div className="w-full h-2 rounded bg-white/10"></div>
-                              <div className="w-2/3 h-2 rounded bg-white/5"></div>
-                            </div>
-                            <div className="flex-1 p-4 flex flex-col gap-3">
-                              <div className="w-28 h-3 rounded bg-white/15"></div>
-                              <div className="grid grid-cols-2 gap-2">
-                                 <div className="h-14 rounded bg-brand/10 border border-brand/20"></div>
-                                 <div className="h-14 rounded bg-white/5"></div>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-
-                        {project.type === 'chart' && (
-                          <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/15 border-b-0 p-5 flex flex-col shadow-2xl">
-                            <div className="flex justify-between items-center mb-4">
-                              <div className="w-7 h-7 rounded bg-brand/30 flex items-center justify-center"><Activity className="w-3.5 h-3.5 text-brand" /></div>
-                              <div className="w-16 h-3 rounded bg-white/10"></div>
-                            </div>
-                            <div className="flex-1 relative border-b border-l border-white/10">
-                              <svg viewBox="0 0 100 50" className="w-full h-full" preserveAspectRatio="none">
-                                <path d="M0,35 C20,30 40,5 60,15 C80,25 90,5 100,8" fill="none" stroke="#F569FF" strokeWidth="2.5" />
-                              </svg>
-                            </div>
-                          </div>
-                        )}
-
-                        {project.type === 'mobile' && (
-                          <div className="w-40 h-full rounded-t-3xl bg-[#111] border border-white/20 border-b-0 p-2 relative shadow-2xl">
-                             <div className="w-full h-full rounded-t-2xl bg-[#0a0a0a] p-3 flex flex-col gap-3">
-                               <div className="h-10 bg-brand/15 rounded-lg border border-brand/30 flex items-center gap-2 px-2">
-                                 <Smartphone className="w-3 h-3 text-brand" />
-                                 <div className="w-12 h-1.5 rounded bg-brand/40"></div>
-                               </div>
-                               <div className="w-full h-6 rounded bg-white/5"></div>
-                             </div>
-                          </div>
-                        )}
-
-                        {project.type === 'security' && (
-                          <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/15 border-b-0 p-5 flex flex-col shadow-2xl justify-between">
-                            <div className="flex justify-between items-center">
-                              <div className="w-8 h-8 rounded bg-brand/30 flex items-center justify-center"><Shield className="w-4 h-4 text-brand" /></div>
-                              <span className="text-[10px] font-mono text-brand font-bold">SECURED</span>
-                            </div>
-                            <div className="space-y-2">
-                              <div className="w-full h-3 rounded bg-brand/20"></div>
-                              <div className="w-3/4 h-3 rounded bg-white/10"></div>
-                            </div>
-                          </div>
-                        )}
-
-                        {project.type === 'ai' && (
-                          <div className="w-full h-full rounded-t-xl bg-[#111] border border-white/15 border-b-0 p-5 flex flex-col shadow-2xl justify-between">
-                            <div className="flex justify-between items-center">
-                              <div className="w-8 h-8 rounded bg-brand/30 flex items-center justify-center"><Cpu className="w-4 h-4 text-brand" /></div>
-                              <span className="text-[10px] font-mono text-brand font-bold">AI AGENT</span>
-                            </div>
-                            <div className="p-2 rounded bg-white/5 border border-white/10 text-[10px] font-mono text-white/60">
-                              {`> Analysis complete: 0 risks detected.`}
-                            </div>
-                          </div>
-                        )}
-
-                      </div>
-                    </div>
-                  )}
-
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08080c] via-transparent to-transparent opacity-40 pointer-events-none" />
                 </div>
@@ -255,7 +130,7 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
                       {project.title}
                     </h3>
                     <p className="text-xs font-mono text-brand/90 font-medium mb-4">
-                      {project.client} · <span className="text-white/60">{project.impactMetric}</span>
+                      {project.projectType} · <span className="text-white/60">{project.impactMetric}</span>
                     </p>
 
                     {/* Description */}
@@ -321,7 +196,7 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
                   {selectedProject.title}
                 </h2>
                 <p className="text-sm font-mono text-brand mb-6">
-                  {selectedProject.client} — Impact: {selectedProject.impactMetric}
+                  {selectedProject.projectType} — {selectedProject.impactMetric}
                 </p>
 
                 <div className="w-full h-[1px] bg-white/10 mb-8" />
@@ -356,17 +231,15 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
                   ))}
                 </div>
 
-                {/* Open Full Dedicated Page Link if available */}
-                {selectedProject.slug && (
-                  <div className="pt-4 border-t border-white/10 flex justify-end">
-                    <Link
-                      href={selectedProject.slug}
-                      className="px-6 py-3 rounded-xl bg-brand text-black font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 hover:bg-brand/90 transition-all shadow-[0_0_15px_rgba(245,105,255,0.3)]"
-                    >
-                      Open Full Case Study Page <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                )}
+                {/* Open Full Dedicated Page Link */}
+                <div className="pt-4 border-t border-white/10 flex justify-end">
+                  <Link
+                    href={selectedProject.slug}
+                    className="px-6 py-3 rounded-xl bg-brand text-black font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 hover:bg-brand/90 transition-all shadow-[0_0_15px_rgba(245,105,255,0.3)]"
+                  >
+                    Open Full Case Study Page <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
 
               </motion.div>
             </motion.div>

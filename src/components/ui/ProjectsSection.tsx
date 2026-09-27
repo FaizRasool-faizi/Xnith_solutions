@@ -142,10 +142,10 @@ export default function ProjectsSection() {
                       {project.desc}
                     </p>
 
-                    {/* What XNITH Built */}
+                    {/* What XENITH Built */}
                     <div className="rounded-xl bg-zinc-900/90 border border-zinc-800 p-3.5 mb-6 text-xs leading-relaxed">
                       <span className="font-mono text-[10px] tracking-wider text-brand font-semibold uppercase block mb-1">
-                        WHAT XNITH BUILT:
+                        WHAT XENITH BUILT:
                       </span>
                       <p className="text-zinc-200 font-normal">
                         {project.whatWeBuilt}

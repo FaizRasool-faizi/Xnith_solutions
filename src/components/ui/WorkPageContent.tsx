@@ -4,15 +4,13 @@ import React, { useState } from 'react';
 import WorkHero from '@/components/ui/WorkHero';
 import WorkGridSection from '@/components/ui/WorkGridSection';
 import WorkImpactStatsSection from '@/components/ui/WorkImpactStatsSection';
-import TestimonialsSection from '@/components/ui/TestimonialsSection';
 import CTASection from '@/components/ui/CTASection';
 
 const categories = [
   'ALL',
   'AI & INTELLIGENCE',
-  'ENTERPRISE & LMS',
-  'HEALTHCARE TECH',
-  'FINTECH & WEB3',
+  '3D & WEBGL',
+  'MARKETPLACES',
   'MOBILE APPS'
 ];
 
@@ -28,7 +26,6 @@ export default function WorkPageContent() {
       />
       <WorkGridSection activeCategory={activeCategory} />
       <WorkImpactStatsSection />
-      <TestimonialsSection />
       <CTASection />
     </div>
   );

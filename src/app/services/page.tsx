@@ -2,13 +2,12 @@ import type { Metadata } from 'next';
 import ServicesHero from '@/components/ui/ServicesHero';
 import ServicesGridSection from '@/components/ui/ServicesGridSection';
 import HowWeWorkProcessSection from '@/components/ui/HowWeWorkProcessSection';
-import SolutionCategoriesSection from '@/components/ui/SolutionCategoriesSection';
 import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 import CTASection from '@/components/ui/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Services | XNITH Solutions',
-  description: 'Services that turn digital ambition into systems. Beyond our platforms, we partner with organizations to design, build, and operate digital solutions.',
+  title: 'Services | XENITH Solutions',
+  description: 'Custom software and AI engineering services. We partner with founders and businesses to design, engineer, and deploy custom web applications, SaaS platforms, and intelligent automation.',
 };
 
 export default function ServicesPage() {
@@ -17,7 +16,6 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesGridSection />
       <HowWeWorkProcessSection />
-      <SolutionCategoriesSection />
       <ThreeWaysSection />
       <CTASection />
     </div>

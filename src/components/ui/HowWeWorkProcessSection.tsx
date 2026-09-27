@@ -17,7 +17,7 @@ const processSteps = [
   {
     num: '03',
     title: 'Build',
-    desc: 'We engineer and integrate scalable software with enterprise-grade quality, performance, and security baked in.'
+    desc: 'We engineer and integrate scalable software with production-ready quality, performance, and maintainable architecture baked in.'
   },
   {
     num: '04',

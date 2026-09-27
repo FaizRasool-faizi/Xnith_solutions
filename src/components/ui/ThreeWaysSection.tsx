@@ -6,21 +6,21 @@ import Link from 'next/link';
 
 const ways = [
   {
-    label: 'FOR ENTERPRISES & GOVERNMENTS',
-    title: 'Build, modernize, and scale with a partner who\'s actually shipped, not just advised.',
-    cta: 'Talk to us →',
+    label: 'FOR FOUNDERS & STARTUPS',
+    title: 'Turn early product concepts, MVPs, and technical requirements into production-ready software platforms.',
+    cta: 'Start a Project →',
     href: '/contact'
   },
   {
-    label: 'FOR FOUNDERS & INDIVIDUALS',
-    title: 'Grow with our ecosystem of digital platforms: learning, talent, growth, and more.',
-    cta: 'Explore the ecosystem →',
+    label: 'FOR GROWING BUSINESSES',
+    title: 'Modernize internal operations, automate manual workflows, and integrate custom AI assistants into your business.',
+    cta: 'Explore Services →',
     href: '/services'
   },
   {
-    label: 'FOR INVESTORS & PARTNERS',
-    title: 'Back a company with services strength and its own scaling digital IP.',
-    cta: 'Get in touch →',
+    label: 'FOR TECHNICAL LEADERS',
+    title: 'Collaborate directly with hands-on systems engineers to build specialized full-stack, 3D, and AI applications.',
+    cta: 'Discuss Technical Scope →',
     href: '/contact'
   }
 ];
@@ -45,11 +45,11 @@ export default function ThreeWaysSection() {
         >
           <div className="flex items-center gap-4 text-xs font-semibold tracking-widest text-brand uppercase mb-6">
             <span className="h-[1px] w-8 bg-brand"></span>
-            BUILT FOR WHERE YOU STAND
+            COLLABORATION MODELS
             <span className="h-[1px] w-8 bg-brand"></span>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
-            Three ways in.
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
+            How we partner with you.
           </h2>
         </motion.div>
 

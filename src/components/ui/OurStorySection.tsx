@@ -5,30 +5,30 @@ import { motion } from 'framer-motion';
 
 const milestones = [
   {
-    year: '2026 · Founded',
-    title: 'Our beginning',
-    desc: 'Founded with a mission to solve real world problems through technology and bold ideas.',
+    year: 'Founding Vision',
+    title: 'Engineer-Led Studio',
+    desc: 'Founded by Faiz Rasool and Sawera Saghir with a direct focus on engineering modern software, custom AI systems, and scalable web applications.',
     color: 'bg-brand',
     labelColor: 'text-brand'
   },
   {
-    year: 'The Journey',
-    title: 'From services to platforms',
-    desc: 'Moved from delivering software to building platforms that empower entire industries.',
+    year: 'Proprietary R&D',
+    title: 'Building Internal Engines',
+    desc: 'Engineered and battle-tested our own technical engines across conversational AI, real-time computer vision, and interactive 3D WebGL.',
     color: 'bg-violet-400',
     labelColor: 'text-violet-400'
   },
   {
-    year: 'Clients First',
-    title: 'Proving impact',
-    desc: 'Deep enterprise and cross-industry work established a track record of trusted delivery.',
+    year: 'Delivered Systems',
+    title: 'Technical Proof of Capability',
+    desc: 'Built functional platforms including Appointix, AuraTalk AI, and Petstan—demonstrating real-world full-stack and applied AI architecture.',
     color: 'bg-brand',
     labelColor: 'text-brand'
   },
   {
-    year: 'Today',
-    title: 'The Digital Potential Ecosystem',
-    desc: 'Five proprietary platforms, one connected mission, millions of lives impacted.',
+    year: 'Client Engineering',
+    title: 'Direct Technical Partnership',
+    desc: 'Collaborating directly with founders and business owners to ship production-ready web applications, SaaS platforms, and custom automation.',
     color: 'bg-violet-400',
     labelColor: 'text-violet-400'
   }
@@ -49,7 +49,7 @@ export default function OurStorySection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col gap-12"
+            className="flex flex-col gap-10"
           >
             {/* Label */}
             <div className="flex items-center gap-4 text-xs font-semibold tracking-widest text-brand uppercase">
@@ -59,18 +59,17 @@ export default function OurStorySection() {
 
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.05]">
-              From software<br />
-              to a digital ecosystem.
+              Built by engineers who ship real software.
             </h2>
 
             {/* Description */}
             <p className="text-lg text-white/60 leading-relaxed max-w-md">
-              We started by solving real world problems with code. Today we build intelligent products and human-centered platforms that drive measurable impact.
+              XENITH Solutions is a software and AI engineering studio focused on building custom web applications, SaaS products, AI-powered systems, and digital platforms.
             </p>
 
             {/* Bold Statement */}
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1]">
-              We are not simply building software. We are building the future of human potential.
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-[1.2]">
+              We work directly with founders and teams to turn ambitious product requirements into reliable code.
             </h3>
           </motion.div>
 

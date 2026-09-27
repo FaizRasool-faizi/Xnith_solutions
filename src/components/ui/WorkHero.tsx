@@ -35,7 +35,7 @@ export default function WorkHero({ activeCategory, onCategoryChange, categories 
         >
           <Link href="/" className="hover:text-white/60 transition-colors">HOME</Link>
           <span>/</span>
-          <span className="text-white/50">PORTFOLIO</span>
+          <span className="text-white/50">WORK</span>
         </motion.div>
 
         {/* Badge */}
@@ -67,7 +67,7 @@ export default function WorkHero({ activeCategory, onCategoryChange, categories 
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg md:text-xl text-white/50 leading-relaxed max-w-2xl mb-14"
         >
-          Explore our showcase of enterprise platforms, AI ecosystems, web applications, and mobile products built with speed, precision, and architectural elegance.
+          Explore technical case studies and software applications engineered by XENITH, spanning applied AI, real-time computer vision, interactive 3D WebGL, and modern web platforms.
         </motion.p>
 
         {/* Filter Tabs */}

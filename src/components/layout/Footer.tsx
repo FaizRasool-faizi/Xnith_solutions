@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-3 md:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold tracking-tighter text-white">
-                XNITH<span className="text-brand">.</span>
+                XENITH<span className="text-brand">.</span>
               </span>
             </Link>
             <p className="text-sm text-zinc-300 max-w-sm leading-relaxed font-normal">
               Modern web applications, AI-powered software, SaaS platforms, and intelligent digital systems built for real-world business needs.
             </p>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              Lahore, Pakistan · Serving Global Clients
+              Lahore, Pakistan
             </p>
           </div>
 

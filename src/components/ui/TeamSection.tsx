@@ -147,9 +147,9 @@ export default function TeamSection() {
             <span className="h-[1px] w-8 bg-brand" />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white max-w-3xl leading-tight">
-            Leadership driving innovation,{' '}
+            Founders who directly engineer{' '}
             <br className="hidden md:block" />
-            growth, and human potential.
+            the systems they design.
           </h2>
         </motion.div>
 

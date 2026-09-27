@@ -50,7 +50,7 @@ export default function ContactHero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-8 max-w-4xl"
         >
-          Let's build your part of{' '}
+          Let&apos;s build your part of{' '}
           <span className="text-brand">the future.</span>
         </motion.h1>
 
@@ -61,7 +61,7 @@ export default function ContactHero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg md:text-xl text-white/50 leading-relaxed max-w-2xl"
         >
-          Whether you're an enterprise looking to innovate, a founder with a bold vision, or an investor seeking technical excellence — we're ready to talk.
+          Whether you&apos;re a founder with an early product vision, a growing business looking to automate, or a technical team seeking engineering support — we&apos;re ready to talk.
         </motion.p>
 
       </div>

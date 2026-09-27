@@ -8,8 +8,8 @@ import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 import CTASection from '@/components/ui/CTASection';
 
 export const metadata: Metadata = {
-  title: 'About Us | XNITH Solutions',
-  description: 'From software to a digital ecosystem. We are not simply building software — we are building the future of human potential.',
+  title: 'About Us | XENITH Solutions',
+  description: 'XENITH Solutions is a software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building custom web applications, SaaS platforms, and intelligent digital systems.',
 };
 
 export default function AboutPage() {

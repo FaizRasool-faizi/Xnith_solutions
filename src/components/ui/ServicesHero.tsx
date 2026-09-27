@@ -61,7 +61,7 @@ export default function ServicesHero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-lg md:text-xl text-white/50 leading-relaxed max-w-2xl"
         >
-          Beyond our platforms, we partner with organizations to design, build, and operate intelligent systems that fit their data, workflows, and goals.
+          Beyond our platforms, we partner with founders and businesses to design, architect, and deploy intelligent software tailored to their workflows and technical goals.
         </motion.p>
 
       </div>

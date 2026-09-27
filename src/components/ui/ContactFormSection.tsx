@@ -2,27 +2,27 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 
 const projectTypes = [
+  'Custom Web App',
   'AI & Automation',
-  'Enterprise LMS',
-  'Healthcare Tech',
-  'Custom Product',
-  'Cloud Architecture',
-  'Consulting & Audit'
+  'SaaS Platform',
+  '3D Web & Interactive',
+  'Mobile App',
+  'Architecture & Advisory'
 ];
 
 const budgetRanges = [
-  '<$25k',
-  '$25k - $50k',
-  '$50k - $100k',
-  '$100k+'
+  '<$5,000',
+  '$5,000 - $15,000',
+  '$15,000 - $35,000',
+  'Flexible / To Discuss'
 ];
 
 export default function ContactFormSection() {
-  const [selectedTypes, setSelectedTypes] = useState<string[]>(['AI & Automation']);
-  const [selectedBudget, setSelectedBudget] = useState<string>('$50k - $100k');
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(['Custom Web App']);
+  const [selectedBudget, setSelectedBudget] = useState<string>('$5,000 - $15,000');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -60,7 +60,7 @@ export default function ContactFormSection() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
-          {/* Left Column: Direct Channels & Guarantee */}
+          {/* Left Column: Direct Channels & Communication */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -116,12 +116,12 @@ export default function ContactFormSection() {
               </div>
             </div>
 
-            {/* Response Time Guarantee Badge */}
+            {/* Direct Communication Badge */}
             <div className="p-6 rounded-2xl bg-brand/5 border border-brand/20 flex items-center gap-4">
               <div className="w-3 h-3 rounded-full bg-brand animate-pulse" />
               <div>
-                <p className="text-xs font-semibold text-brand tracking-widest uppercase">24-HOUR RESPONSE GUARANTEE</p>
-                <p className="text-xs text-white/50 mt-0.5">We respond to all qualified inquiries within one business day.</p>
+                <p className="text-xs font-semibold text-brand tracking-widest uppercase">DIRECT ENGINEER RESPONSE</p>
+                <p className="text-xs text-white/50 mt-0.5">We respond to qualified project inquiries typically within one business day.</p>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export default function ContactFormSection() {
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-3">Message Received!</h3>
                   <p className="text-white/60 max-w-md mb-8 leading-relaxed">
-                    Thank you for reaching out. A senior partner from the XENITH team will review your inquiry and connect with you within 24 hours.
+                    Thank you for reaching out. An engineering lead from the XENITH team will review your inquiry and connect with you typically within one business day.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}

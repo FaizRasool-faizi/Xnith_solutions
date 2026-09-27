@@ -43,7 +43,7 @@ export default function PhilosophySection() {
             human and agent.
           </h2>
           <p className="text-lg text-white/60 leading-relaxed max-w-2xl">
-            The way AI gets built has changed. We don't staff traditional headcount. We deploy AI fluent people and trained AI agents, working side by side.
+            The way AI gets built has changed. We don&apos;t staff traditional headcount. We deploy AI fluent people and trained AI agents, working side by side.
           </p>
         </motion.div>
 

@@ -12,7 +12,6 @@ import {
   MessageSquare, 
   LayoutDashboard, 
   Smartphone, 
-  CheckCircle2, 
   ArrowLeft,
   ExternalLink,
   Layers,
@@ -105,7 +104,7 @@ export default function AppointixDetailSection() {
               AI-Powered Local Service & Marketplace
             </span>
             <span className="px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-semibold font-mono uppercase">
-              ● Active / Deployed
+              ● Active Prototype
             </span>
           </div>
 
@@ -116,8 +115,8 @@ export default function AppointixDetailSection() {
           {/* Quick Specs Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-sm">
             <div>
-              <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">CLIENT / TYPE</p>
-              <p className="text-sm font-semibold text-white mt-1">Production Platform</p>
+              <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">PROJECT TYPE</p>
+              <p className="text-sm font-semibold text-white mt-1">Proprietary Product</p>
             </div>
             <div>
               <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">NICHE</p>
@@ -129,7 +128,7 @@ export default function AppointixDetailSection() {
             </div>
             <div>
               <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">MODULES</p>
-              <p className="text-sm font-semibold text-white mt-1">8+ Core AI Modules</p>
+              <p className="text-sm font-semibold text-white mt-1">8 Functional Modules</p>
             </div>
           </div>
         </motion.div>

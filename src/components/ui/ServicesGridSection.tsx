@@ -18,7 +18,7 @@ const serviceCards = [
   {
     num: '03',
     title: 'Generative AI & NLP',
-    desc: 'Enterprise solutions for conversational AI, intelligent search, content engines, and language processing at scale.'
+    desc: 'Custom solutions for conversational AI, intelligent document search, and language processing at scale.'
   },
   {
     num: '04',
@@ -33,7 +33,7 @@ const serviceCards = [
   {
     num: '06',
     title: 'IoT & System Modernization',
-    desc: 'Connect devices, sensors, and legacy enterprise software to modern, cloud-native intelligent platforms.'
+    desc: 'Connect external devices, APIs, and existing business software to modern, cloud-native intelligent platforms.'
   }
 ];
 
