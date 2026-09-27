@@ -38,7 +38,7 @@ export default function ModelSection() {
         >
           <div className="flex items-center gap-4 text-xs font-semibold tracking-widest text-brand uppercase mb-6">
             <span className="h-[1px] w-8 bg-brand"></span>
-            OUR MODEL
+            TWO DELIVERY ENGINES
             <span className="h-[1px] w-8 bg-brand"></span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-6">

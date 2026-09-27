@@ -98,7 +98,7 @@ export default function EcosystemSection() {
               
               {/* Center Hub */}
               <div className="absolute w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-b from-[#151520] to-[#08080f] border border-zinc-700 flex flex-col items-center justify-center z-10 shadow-2xl">
-                <span className="text-white font-bold tracking-widest text-sm sm:text-base font-mono">XNITH</span>
+                <span className="text-white font-bold tracking-widest text-sm sm:text-base font-mono">XENITH</span>
                 <span className="text-[9px] sm:text-[11px] text-brand tracking-[0.2em] uppercase mt-1 font-semibold">LABS</span>
               </div>
 

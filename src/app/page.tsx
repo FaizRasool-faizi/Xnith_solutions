@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import ParticleNetwork from '@/components/ui/ParticleNetwork';
 import ArchitecturalStandardsSection from '@/components/ui/ArchitecturalStandardsSection';
+import AiTeamDeliverySection from '@/components/ui/AiTeamDeliverySection';
 import ModelSection from '@/components/ui/ModelSection';
 import EcosystemSection from '@/components/ui/EcosystemSection';
 import ServicesSection from '@/components/ui/ServicesSection';
@@ -116,7 +117,7 @@ export default function Home() {
           <div className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between gap-12 mt-2">
             <div className="flex max-w-3xl flex-col gap-8">
               <p className="text-base sm:text-lg text-zinc-300 leading-relaxed font-normal">
-                XNITH Solutions designs and builds modern web applications, AI-powered software, SaaS platforms, and intelligent digital systems for businesses that need technology built around real-world problems.
+                XENITH Solutions designs and builds modern web applications, AI-powered software, SaaS platforms, and intelligent digital systems for businesses that need technology built around real-world problems.
               </p>
               
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -143,7 +144,10 @@ export default function Home() {
       {/* 2. ARCHITECTURAL STANDARDS (Stats Replacement) */}
       <ArchitecturalStandardsSection />
 
-      {/* 3. DUAL DELIVERY MODEL */}
+      {/* 3. THE DELIVERY MODEL (AI Native Team: Human + Agent) */}
+      <AiTeamDeliverySection />
+
+      {/* 4. DUAL DELIVERY ENGINES (Studio & Product Lab) */}
       <ModelSection />
 
       {/* 4. PROPRIETARY INNOVATION LAB */}
