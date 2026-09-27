@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-3 md:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold tracking-tighter text-white">
-                XENITH<span className="text-brand">.</span>
+                XNITH<span className="text-brand">.</span>
               </span>
             </Link>
             <p className="text-sm text-zinc-300 max-w-sm leading-relaxed font-normal">

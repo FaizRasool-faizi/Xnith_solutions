@@ -7,50 +7,53 @@ import { Bot, Video, Box, ArrowRight } from 'lucide-react';
 
 const platforms = [
   {
-    id: 'appointix',
+    id: 'voice-agent',
     num: '01',
-    name: 'LOCAL AI',
-    title: 'Appointix',
-    tagline: 'AI-Powered Local Services & Appointment Platform',
-    desc: 'An intelligent marketplace connecting households with verified local service experts. Features Gemini AI natural language intent parsing, multilingual Urdu and English voice input, live GPS proximity routing, and an Expo React Native mobile application.',
-    tags: ['Gemini AI', 'Next.js 16', 'Expo React Native', 'Firebase', 'WebSockets'],
+    name: 'AGENT & VOICE',
+    title: 'Multilingual Voice & Intent Engine',
+    tagline: 'Autonomous natural language parsing and voice orchestration R&D',
+    desc: 'Our internal conversational R&D pipeline exploring sub-second voice input recognition, natural language intent classification, and automated agent dispatching across English and Urdu regional dialects.',
+    tags: ['Gemini API', 'Intent Parsing', 'Urdu & English Voice', 'WebSockets', 'Autonomous Agents'],
     stats: [
-      { value: 'Voice + Text', label: 'MULTILINGUAL' },
-      { value: 'Next.js + Expo', label: 'CROSS-PLATFORM' }
+      { value: 'Multi-Dialect', label: 'VOICE RECOGNITION' },
+      { value: 'Agentic', label: 'AUTONOMOUS DISPATCH' }
     ],
     icon: Bot,
+    evidenceBadge: 'Engineered into the Appointix Platform',
     slug: '/work/appointix',
     angle: 0,
   },
   {
-    id: 'auratalk',
+    id: 'neural-vision',
     num: '02',
-    name: 'NEURAL AI',
-    title: 'AuraTalk AI',
-    tagline: 'Real-Time AI Avatar & Conversational Video System',
-    desc: 'An interactive video assistant platform combining real-time camera emotion tracking, CUDA-accelerated Wav2Lip neural lip-synchronization, and local Llama 3 LLM memory to deliver an expressive, human-like video call experience.',
-    tags: ['PyTorch CUDA', 'Wav2Lip', 'MediaPipe', 'Local Llama 3', 'FastAPI WebSockets'],
+    name: 'NEURAL VISION',
+    title: 'Real-Time Neural Lip-Sync & Vision',
+    tagline: 'Sub-second video avatar generation and facial emotion tracking R&D',
+    desc: 'Our neural media pipeline combining live camera emotion detection via MediaPipe, CUDA-accelerated Wav2Lip synthesis, and local LLM context to deliver expressive conversational video avatars directly in the browser.',
+    tags: ['PyTorch CUDA', 'Wav2Lip Pipeline', 'Google MediaPipe', 'FastAPI', 'Local Llama 3'],
     stats: [
-      { value: 'CUDA Sync', label: 'NEURAL LIP-SYNC' },
+      { value: 'CUDA Accelerated', label: 'NEURAL LIP-SYNC' },
       { value: 'MediaPipe', label: 'EMOTION TRACKING' }
     ],
     icon: Video,
+    evidenceBadge: 'Engineered into AuraTalk AI Avatar System',
     slug: '/work/auratalk',
     angle: 120,
   },
   {
-    id: 'petstan',
+    id: 'spatial-3d',
     num: '03',
-    name: '3D WEBGL',
-    title: 'Petstan',
-    tagline: 'Interactive 3D Multi-Vendor Pet Marketplace Platform',
-    desc: 'A modern e-commerce platform featuring an interactive 3D hero experience rendered in WebGL, multi-criteria health-verified filtering, dedicated seller revenue analytics workspaces, and an escrow order processing ledger.',
-    tags: ['Next.js 14', 'Three.js', 'React Three Fiber', 'PostgreSQL', 'Zustand'],
+    name: 'SPATIAL 3D',
+    title: 'Interactive WebGL & 3D Spatial Engine',
+    tagline: 'Hardware-accelerated browser 3D product rendering & physics',
+    desc: 'Our graphics pipeline pushing high-performance WebGL, custom shader materials, and React Three Fiber spatial experiences—rendering interactive 3D product environments smoothly on standard mobile and desktop browsers.',
+    tags: ['Three.js', 'WebGL', 'React Three Fiber', 'GLTF Optimization', 'Physics Shaders'],
     stats: [
-      { value: 'Three.js 3D', label: 'INTERACTIVE HERO' },
-      { value: 'Escrow Ledger', label: 'TRANSACTION SECURITY' }
+      { value: 'Hardware WebGL', label: 'BROWSER 3D' },
+      { value: 'Zero Plugins', label: 'NATIVE RUNTIME' }
     ],
     icon: Box,
+    evidenceBadge: 'Engineered into Petstan 3D Marketplace',
     slug: '/work/petstan',
     angle: 240,
   }
@@ -72,10 +75,10 @@ export default function EcosystemSection() {
               PROPRIETARY INNOVATION LAB
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-              Real platforms we have engineered and launched.
+              Experimental technology and internal R&D.
             </h2>
             <p className="text-lg text-zinc-300 leading-relaxed max-w-2xl font-normal">
-              We engineer our own software products to explore emerging technologies and prove our architectural capabilities in production. <span className="text-brand font-medium">Select a node to inspect:</span>
+              Before deploying solutions for client systems, we engineer and battle-test our own technical engines—pushing capabilities across autonomous agents, real-time computer vision, and spatial 3D web engines. <span className="text-brand font-medium">Select an R&D node to inspect:</span>
             </p>
           </div>
           
@@ -98,7 +101,7 @@ export default function EcosystemSection() {
               
               {/* Center Hub */}
               <div className="absolute w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-b from-[#151520] to-[#08080f] border border-zinc-700 flex flex-col items-center justify-center z-10 shadow-2xl">
-                <span className="text-white font-bold tracking-widest text-sm sm:text-base font-mono">XENITH</span>
+                <span className="text-white font-bold tracking-widest text-sm sm:text-base font-mono">XNITH</span>
                 <span className="text-[9px] sm:text-[11px] text-brand tracking-[0.2em] uppercase mt-1 font-semibold">LABS</span>
               </div>
 
@@ -169,7 +172,7 @@ export default function EcosystemSection() {
                   ))}
                 </div>
                 
-                <div className="flex items-center gap-12 mb-10">
+                <div className="flex items-center gap-12 mb-8">
                   {activePlatform.stats.map((stat, i) => (
                     <div key={i}>
                       <div className="text-xl sm:text-2xl font-bold text-white mb-1 font-mono">{stat.value}</div>
@@ -177,13 +180,23 @@ export default function EcosystemSection() {
                     </div>
                   ))}
                 </div>
+
+                {/* Evidence Callout */}
+                <div className="rounded-xl bg-zinc-900/80 border border-zinc-800 p-4 mb-8 max-w-xl">
+                  <div className="text-[10px] font-mono tracking-wider text-brand font-semibold uppercase mb-1">
+                    PRODUCTION APPLICATION PROOF:
+                  </div>
+                  <div className="text-sm text-zinc-200 font-medium">
+                    {activePlatform.evidenceBadge}
+                  </div>
+                </div>
                 
                 <div>
                   <Link 
                     href={activePlatform.slug}
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand text-black font-bold text-sm tracking-wide hover:bg-brand/90 transition-all shadow-[0_0_20px_rgba(245,105,255,0.3)] group"
                   >
-                    View Case Study & Architecture
+                    Inspect Architecture & Case Study
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>

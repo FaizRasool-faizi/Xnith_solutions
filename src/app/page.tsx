@@ -8,6 +8,7 @@ import EcosystemSection from '@/components/ui/EcosystemSection';
 import ServicesSection from '@/components/ui/ServicesSection';
 import ProjectsSection from '@/components/ui/ProjectsSection';
 import DeliveryCommitmentsSection from '@/components/ui/DeliveryCommitmentsSection';
+import HowWeStartSection from '@/components/ui/HowWeStartSection';
 import CTASection from '@/components/ui/CTASection';
 import { siteConfig } from '@/config/site';
 
@@ -117,7 +118,7 @@ export default function Home() {
           <div className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between gap-12 mt-2">
             <div className="flex max-w-3xl flex-col gap-8">
               <p className="text-base sm:text-lg text-zinc-300 leading-relaxed font-normal">
-                XENITH Solutions designs and builds modern web applications, AI-powered software, SaaS platforms, and intelligent digital systems for businesses that need technology built around real-world problems.
+                XNITH Solutions designs and builds custom web applications, AI-powered software, SaaS platforms, and intelligent digital systems for founders and growing businesses. Whether you need to automate manual operations, launch a new digital product, or integrate AI directly into your business, we engineer reliable technology built around real-world problems.
               </p>
               
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -159,10 +160,13 @@ export default function Home() {
       {/* 6. DELIVERED WORK */}
       <ProjectsSection />
 
-      {/* 7. DELIVERY COMMITMENTS (Testimonials Replacement) */}
+      {/* 7. DELIVERY COMMITMENTS (How We Work) */}
       <DeliveryCommitmentsSection />
 
-      {/* 8. FINAL CTA */}
+      {/* 8. HOW WE START (3-Step Engagement Process & Human Accountability) */}
+      <HowWeStartSection />
+
+      {/* 9. FINAL CTA */}
       <CTASection />
     </div>
   );

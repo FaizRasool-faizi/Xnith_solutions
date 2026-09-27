@@ -12,9 +12,9 @@ const getBaseUrl = (): string => {
 };
 
 export const siteConfig = {
-  name: "XENITH Solutions",
-  title: "XENITH Solutions | AI Software Development & Custom Digital Platforms",
-  description: "XENITH Solutions builds custom AI software, web applications, SaaS platforms, and intelligent digital products for businesses and startups.",
+  name: "XNITH Solutions",
+  title: "XNITH Solutions | AI Software Development & Custom Digital Platforms",
+  description: "XNITH Solutions builds custom AI software, web applications, SaaS platforms, and intelligent digital products for businesses and startups.",
   url: getBaseUrl(),
   mainNav: [
     { title: "Home", href: "/" },
@@ -24,7 +24,7 @@ export const siteConfig = {
     { title: "Contact", href: "/contact" },
   ],
   companyInfo: {
-    email: "contact@xenith-solutions.com",
+    email: "contact@xnith-solutions.com",
     phone: "+92 317 4804970",
     address: "Lahore, Pakistan",
   },

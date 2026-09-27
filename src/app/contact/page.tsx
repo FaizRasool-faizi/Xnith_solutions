@@ -5,8 +5,8 @@ import ContactFAQSection from '@/components/ui/ContactFAQSection';
 import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | XENITH Solutions',
-  description: 'Start a project or inquire about enterprise solutions with XENITH. Guaranteed response within 24 hours.',
+  title: 'Contact Us | XNITH Solutions',
+  description: 'Start a project or inquire about custom software and AI solutions with XNITH Solutions.',
 };
 
 export default function ContactPage() {

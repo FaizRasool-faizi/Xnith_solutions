@@ -7,7 +7,7 @@ import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 import CTASection from '@/components/ui/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Services | XENITH Solutions',
+  title: 'Services | XNITH Solutions',
   description: 'Services that turn digital ambition into systems. Beyond our platforms, we partner with organizations to design, build, and operate digital solutions.',
 };
 

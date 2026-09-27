@@ -56,9 +56,9 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base md:text-lg text-zinc-200 leading-relaxed max-w-xl mb-12 relative z-10 font-normal"
+            className="text-base md:text-lg text-zinc-200 leading-relaxed max-w-2xl mb-10 relative z-10 font-normal"
           >
-            Tell us what you&apos;re building, what problem you&apos;re solving, and where you need engineering support.
+            Tell us about your project, the business problem you are solving, or the software you need built. We evaluate requirements from an engineering perspective and discuss the most practical way forward.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -67,7 +67,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center gap-4 relative z-10"
+            className="flex flex-col sm:flex-row items-center gap-4 relative z-10 mb-6"
           >
             <Link
               href="/contact"
@@ -85,6 +85,15 @@ export default function CTASection() {
               <span className="transition-transform group-hover:translate-x-1 text-brand">→</span>
             </Link>
           </motion.div>
+
+          {/* Micro Reassurance */}
+          <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-zinc-400 relative z-10">
+            <span>Direct engineer consultation</span>
+            <span>·</span>
+            <span>No agency sales pitch</span>
+            <span>·</span>
+            <span>Clear scope discussion</span>
+          </div>
 
         </motion.div>
 

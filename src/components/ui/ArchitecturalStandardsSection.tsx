@@ -7,32 +7,37 @@ const standards = [
   {
     num: '01',
     title: 'TYPE-SAFE FULL STACK',
-    desc: 'Next.js, React, TypeScript and modern frontend architecture for scalable web applications.',
+    businessDesc: 'Modern, scalable web applications built for reliability and growth.',
+    techDesc: 'Next.js 16, React 19, TypeScript, and modern modular architecture.',
     tag: 'Web & Platforms',
   },
   {
     num: '02',
     title: 'APPLIED AI & LLM SYSTEMS',
-    desc: 'LLM integrations, AI assistants, RAG workflows and intelligent application features.',
+    businessDesc: 'AI assistants and automated workflows that can work with business data.',
+    techDesc: 'LLM integration, document intelligence, and automated task pipelines.',
     tag: 'Intelligence',
   },
   {
     num: '03',
     title: 'NEURAL AUDIO & VISION',
-    desc: 'Computer vision, voice interfaces, neural media pipelines and GPU-accelerated AI systems.',
-    tag: 'Computer Vision',
+    businessDesc: 'Intelligent voice, video and visual AI applications.',
+    techDesc: 'Computer vision, speech recognition, and neural video pipelines.',
+    tag: 'Voice & Vision',
   },
   {
     num: '04',
     title: 'INTERACTIVE 3D',
-    desc: 'Three.js, WebGL and React Three Fiber for immersive browser-based experiences.',
+    businessDesc: 'Immersive 3D product visualizers and interactive browser experiences.',
+    techDesc: 'Three.js, WebGL, and React Three Fiber graphics.',
     tag: '3D & Graphics',
   },
   {
     num: '05',
     title: 'MODERN CLOUD & APIs',
-    desc: 'Real-time APIs, WebSockets, cloud services and production-ready application infrastructure.',
-    tag: 'Cloud & Systems',
+    businessDesc: 'Fast, secure cloud services and real-time data synchronization.',
+    techDesc: 'Real-time APIs, WebSockets, cloud databases, and scalable infrastructure.',
+    tag: 'Cloud & APIs',
   },
 ];
 
@@ -83,13 +88,18 @@ export default function ArchitecturalStandardsSection() {
                 </div>
 
                 {/* Node Title */}
-                <h3 className="text-sm font-bold text-zinc-100 tracking-wider uppercase font-mono mb-3 min-h-[40px] flex items-center justify-center group-hover:text-brand transition-colors">
+                <h3 className="text-sm font-bold text-zinc-100 tracking-wider uppercase font-mono mb-2 min-h-[36px] flex items-center justify-center group-hover:text-brand transition-colors">
                   {item.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed max-w-[220px]">
-                  {item.desc}
+                {/* Business Description */}
+                <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed max-w-[220px] font-medium mb-2">
+                  {item.businessDesc}
+                </p>
+
+                {/* Tech Breakdown */}
+                <p className="text-[11px] text-zinc-400 font-mono leading-normal max-w-[210px]">
+                  {item.techDesc}
                 </p>
               </motion.div>
             ))}
@@ -118,8 +128,11 @@ export default function ArchitecturalStandardsSection() {
               <h3 className="text-base font-bold text-white tracking-wide uppercase font-mono mb-2 group-hover:text-brand transition-colors">
                 {item.title}
               </h3>
-              <p className="text-sm text-zinc-300 leading-relaxed">
-                {item.desc}
+              <p className="text-sm text-zinc-200 font-medium leading-relaxed mb-3">
+                {item.businessDesc}
+              </p>
+              <p className="text-xs text-zinc-400 font-mono leading-relaxed pt-3 border-t border-zinc-800/80">
+                {item.techDesc}
               </p>
             </motion.div>
           ))}

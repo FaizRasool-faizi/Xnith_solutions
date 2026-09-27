@@ -9,7 +9,7 @@ const services = [
   {
     num: '01',
     title: 'Full-Stack Web & Mobile Development',
-    desc: 'Modern web applications, dashboards, portals, SaaS products and mobile experiences built with Next.js, React 19, TypeScript, and React Native.',
+    desc: 'Custom web applications, dashboards, SaaS products, and mobile apps built for long-term scalability and smooth performance. Built with Next.js 16, React 19, TypeScript, and React Native.',
     icon: Layers,
     evidenceText: 'Proven in Appointix Platform',
     evidenceLink: '/work/appointix'
@@ -17,7 +17,7 @@ const services = [
   {
     num: '02',
     title: 'AI & LLM Integration',
-    desc: 'AI assistants, LLM-powered features, RAG systems, intelligent workflows and custom AI applications powered by Google Gemini, OpenAI, and local Llama models.',
+    desc: 'Intelligent AI assistants and automated workflows that can work directly with your private business documents and knowledge. Powered by Google Gemini, OpenAI, and local Llama models.',
     icon: Bot,
     evidenceText: 'Proven in Appointix Gemini Engine',
     evidenceLink: '/work/appointix'
@@ -25,7 +25,7 @@ const services = [
   {
     num: '03',
     title: 'Computer Vision & Real-Time AI',
-    desc: 'Computer vision, voice interfaces, neural media pipelines and real-time AI experiences featuring PyTorch CUDA acceleration and Google MediaPipe.',
+    desc: 'Software that can understand images, video, and visual information in real time, paired with natural voice interfaces. Built with Google MediaPipe and CUDA-accelerated neural pipelines.',
     icon: Eye,
     evidenceText: 'Proven in AuraTalk AI Neural Engine',
     evidenceLink: '/work/auratalk'
@@ -33,7 +33,7 @@ const services = [
   {
     num: '04',
     title: '3D Web & Digital Platforms',
-    desc: 'Interactive 3D experiences, marketplaces, product platforms and modern digital commerce systems built with Three.js, WebGL, and React Three Fiber.',
+    desc: 'Immersive 3D product visualizers, marketplaces, and modern digital commerce systems that let customers interact with products directly in the browser using Three.js and WebGL.',
     icon: Box,
     evidenceText: 'Proven in Petstan 3D Marketplace',
     evidenceLink: '/work/petstan'
