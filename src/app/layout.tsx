@@ -27,6 +27,24 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'XENITH Solutions - AI Software & Digital Product Engineering',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [`${siteConfig.url}/og-image.png`],
+  },
 };
 
 export default function RootLayout({

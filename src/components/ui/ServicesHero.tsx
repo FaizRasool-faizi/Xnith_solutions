@@ -49,8 +49,9 @@ export default function ServicesHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-10 max-w-4xl"
+          aria-label="Services that turn digital ambition into systems."
         >
-          Services that turn digital{' '}
+          <span>Services that turn digital </span>
           <span className="text-brand">ambition into systems.</span>
         </motion.h1>
 

@@ -49,8 +49,9 @@ export default function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-8 max-w-4xl"
+          aria-label="Let's build your part of the future."
         >
-          Let&apos;s build your part of{' '}
+          <span>Let&apos;s build your part of </span>
           <span className="text-brand">the future.</span>
         </motion.h1>
 

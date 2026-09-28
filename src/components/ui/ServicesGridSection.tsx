@@ -12,6 +12,7 @@ const serviceCards = [
     whatItIs: 'Modern, responsive web applications, SaaS dashboards, and cross-platform mobile apps engineered for speed, stability, and clean maintainability.',
     whatWeBuild: 'Custom web apps, SaaS MVPs, customer portals, internal management tools, and mobile applications.',
     whoItHelps: 'Founders launching digital products, growing businesses upgrading legacy systems, and teams needing robust client-facing platforms.',
+    businessValue: 'Delivers reliable, production-ready software with clean architecture, fast load times, and zero vendor lock-in.',
     technologies: 'Next.js 15+, React 19, TypeScript, Tailwind CSS, Expo / React Native, PostgreSQL',
     relatedProject: { name: 'Appointix', href: '/work/appointix' }
   },
@@ -21,6 +22,7 @@ const serviceCards = [
     whatItIs: 'Custom software solutions that integrate advanced language models directly into business logic, user experiences, and knowledge systems.',
     whatWeBuild: 'Intelligent conversational assistants, document intelligence pipelines, automated inquiry parsers, and smart search.',
     whoItHelps: 'Businesses with substantial operational data, customer inquiries, or repetitive analytical tasks.',
+    businessValue: 'Connects AI models to your business data and workflows to automate knowledge-heavy and repetitive tasks.',
     technologies: 'Google Gemini, Groq, local open-source LLMs (Llama), vector embeddings, Python, FastAPI',
     relatedProject: { name: 'Appointix AI Engine', href: '/work/appointix' }
   },
@@ -30,6 +32,7 @@ const serviceCards = [
     whatItIs: 'Automated operational pipelines that connect software systems, eliminate repetitive manual processes, and trigger intelligent actions.',
     whatWeBuild: 'Automated webhook processors, multi-step agent workflows, CRM and notification integrations (WhatsApp / email dispatch), and data synchronization.',
     whoItHelps: 'Teams spending hours on manual data entry, customer dispatching, or cross-platform coordination.',
+    businessValue: 'Eliminates repetitive manual admin operations and synchronizes events across systems without human delays.',
     technologies: 'Python, FastAPI, WebSockets, Redis, background task workers, automated messaging APIs',
     relatedProject: { name: 'Appointix Dispatch', href: '/work/appointix' }
   },
@@ -39,6 +42,7 @@ const serviceCards = [
     whatItIs: 'Visual and spatial intelligence software that detects features, tracks facial landmarks, and processes video feeds in real time.',
     whatWeBuild: 'Real-time camera processing, facial emotion tracking, video interaction pipelines, and neural avatar prototypes.',
     whoItHelps: 'Teams building interactive educational software, digital customer service prototypes, or visual inspection tools.',
+    businessValue: 'Enables intelligent visual understanding and real-time interaction in cameras or video feeds with local low-latency inference.',
     technologies: 'Google MediaPipe, PyTorch, CUDA acceleration, Wav2Lip, OpenCV, WebSockets',
     relatedProject: { name: 'AuraTalk AI', href: '/work/auratalk' }
   },
@@ -48,6 +52,7 @@ const serviceCards = [
     whatItIs: 'Hardware-accelerated 3D graphics rendered natively inside standard web browsers without requiring plugins or app downloads.',
     whatWeBuild: 'Interactive 3D product visualizers, spatial web showrooms, custom WebGL canvas components, and interactive e-commerce experiences.',
     whoItHelps: 'E-commerce brands, high-ticket retail products, and digital platforms wanting engaging product exploration.',
+    businessValue: 'Enhances product clarity and customer engagement by letting visitors interact with products in real time 3D.',
     technologies: 'Three.js, React Three Fiber, WebGL, GLTF/GLB optimization, Zustand',
     relatedProject: { name: 'Petstan 3D', href: '/work/petstan' }
   },
@@ -57,6 +62,7 @@ const serviceCards = [
     whatItIs: 'Strategic technical guidance, system design reviews, database modeling, and code audit services directly from senior engineers.',
     whatWeBuild: 'Architecture blueprints, API specifications, database schemas, performance audits, and refactoring roadmaps.',
     whoItHelps: 'Non-technical founders planning complex products, early-stage startups, and technical leaders evaluating scalability.',
+    businessValue: 'Prevents costly rewrites and architectural dead-ends through disciplined engineering and schema planning before coding.',
     technologies: 'Microservices, REST & GraphQL, PostgreSQL, Redis, Docker, Cloud-Native CI/CD',
     relatedProject: { name: 'Contact Engineering', href: '/contact' }
   }
@@ -127,6 +133,10 @@ export default function ServicesGridSection() {
                       <div>
                         <span className="font-mono text-white/70 uppercase tracking-wider font-semibold block mb-0.5">Who It Helps:</span>
                         <span className="text-zinc-300">{service.whoItHelps}</span>
+                      </div>
+                      <div>
+                        <span className="font-mono text-white/70 uppercase tracking-wider font-semibold block mb-0.5">Business Value:</span>
+                        <span className="text-zinc-300">{service.businessValue}</span>
                       </div>
                       <div>
                         <span className="font-mono text-white/70 uppercase tracking-wider font-semibold block mb-0.5">Core Tech:</span>

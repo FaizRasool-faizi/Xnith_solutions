@@ -4,23 +4,32 @@ import AppointixDetailSection from '@/components/ui/AppointixDetailSection';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: 'Appointix | AI Marketplace & Appointment Platform | XENITH Solutions',
-  description: 'Technical case study of Appointix, an AI-powered local service marketplace prototype featuring natural language intent parsing, proximity routing, and cross-platform scheduling.',
+  title: 'Appointix | AI Marketplace & Appointment Platform',
+  description: 'Appointix is an AI-powered appointment and local-services marketplace prototype engineered by XENITH Solutions.',
   alternates: {
     canonical: `${siteConfig.url}/work/appointix`,
   },
   openGraph: {
     title: 'Appointix | AI Marketplace & Appointment Platform | XENITH Solutions',
-    description: 'Technical case study of Appointix, an AI-powered local service marketplace prototype featuring natural language intent parsing, proximity routing, and cross-platform scheduling.',
+    description: 'Appointix is an AI-powered appointment and local-services marketplace prototype engineered by XENITH Solutions.',
     url: `${siteConfig.url}/work/appointix`,
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${siteConfig.url}/appointix.jpeg`,
+        width: 1200,
+        height: 630,
+        alt: 'Appointix AI Marketplace Prototype',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Appointix | AI Marketplace & Appointment Platform | XENITH Solutions',
-    description: 'Technical case study of Appointix, an AI-powered local service marketplace prototype featuring natural language intent parsing, proximity routing, and cross-platform scheduling.',
+    description: 'Appointix is an AI-powered appointment and local-services marketplace prototype engineered by XENITH Solutions.',
+    images: [`${siteConfig.url}/appointix.jpeg`],
   },
 };
 

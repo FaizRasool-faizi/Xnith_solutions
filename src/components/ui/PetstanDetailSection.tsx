@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Box, 
   Filter, 
@@ -35,7 +36,7 @@ const buyerFeatures = [
   {
     icon: Heart,
     title: "Interactive Pet Showcase & Profiles",
-    desc: "Detailed pet profiles featuring high-res galleries, health verification badges, age/breed history, and verified breeder details."
+    desc: "Detailed pet profiles featuring high-res galleries, health verification badges, age/breed history, and seller profile details."
   },
   {
     icon: ShoppingBag,
@@ -151,10 +152,12 @@ export default function PetstanDetailSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-white/15 mb-16 shadow-2xl group bg-[#050508]"
         >
-          <img 
+          <Image 
             src="/petstan.jpeg" 
             alt="Petstan 3D interactive multi-vendor pet marketplace interface with product showcase" 
-            className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700" 
+            fill
+            className="object-cover object-center group-hover:scale-102 transition-transform duration-700" 
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-transparent to-transparent opacity-60 pointer-events-none" />
         </motion.div>

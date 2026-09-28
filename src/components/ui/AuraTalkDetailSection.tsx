@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Zap, 
   Eye, 
@@ -151,10 +152,12 @@ export default function AuraTalkDetailSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-white/15 mb-16 shadow-2xl group bg-[#050508]"
         >
-          <img 
+          <Image 
             src="/AIAvatar.jpg" 
             alt="AuraTalk AI conversational avatar video interface with emotion tracking and neural lip-sync" 
-            className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700" 
+            fill
+            className="object-cover object-center group-hover:scale-102 transition-transform duration-700" 
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-transparent to-transparent opacity-60 pointer-events-none" />
         </motion.div>

@@ -3,7 +3,7 @@ import { ArrowLeft, Home, Layers, Briefcase, Mail } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found | XENITH Solutions',
+  title: 'Page Not Found',
   description: 'The requested page could not be located. Explore our software development services, project portfolio, or contact the team.',
 };
 

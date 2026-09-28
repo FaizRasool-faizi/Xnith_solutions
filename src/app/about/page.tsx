@@ -10,23 +10,34 @@ import CTASection from '@/components/ui/CTASection';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: 'About XENITH Solutions | AI & Software Engineering Studio',
-  description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+  title: {
+    absolute: 'About XENITH Solutions | AI & Software Engineering Studio',
+  },
+  description: 'Learn about XENITH Solutions, a founder-led AI and software engineering studio building custom digital products and intelligent applications.',
   alternates: {
     canonical: `${siteConfig.url}/about`,
   },
   openGraph: {
     title: 'About XENITH Solutions | AI & Software Engineering Studio',
-    description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+    description: 'Learn about XENITH Solutions, a founder-led AI and software engineering studio building custom digital products and intelligent applications.',
     url: `${siteConfig.url}/about`,
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'About XENITH Solutions',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About XENITH Solutions | AI & Software Engineering Studio',
-    description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+    description: 'Learn about XENITH Solutions, a founder-led AI and software engineering studio building custom digital products and intelligent applications.',
+    images: [`${siteConfig.url}/og-image.png`],
   },
 };
 

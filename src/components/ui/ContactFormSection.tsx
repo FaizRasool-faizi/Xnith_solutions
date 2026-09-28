@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 
@@ -96,8 +97,8 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <p className="text-xs font-mono text-white/40 uppercase mb-1">CALL US</p>
-                    <a href="tel:03174804970" className="text-white font-semibold hover:text-brand transition-colors text-base">
-                      03174804970
+                    <a href="tel:+923174804970" className="text-white font-semibold hover:text-brand transition-colors text-base">
+                      +92 317 4804970
                     </a>
                   </div>
                 </div>
@@ -295,6 +296,14 @@ export default function ContactFormSection() {
                       </>
                     )}
                   </button>
+
+                  <p className="text-xs text-white/40 text-center pt-2">
+                    By submitting, you agree to our{' '}
+                    <Link href="/privacy" className="text-brand hover:underline font-medium">
+                      Privacy Policy
+                    </Link>
+                    . Direct engineer review without marketing spam.
+                  </p>
                 </motion.form>
               )}
             </AnimatePresence>

@@ -50,9 +50,9 @@ export default function AboutHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.0] mb-10 max-w-3xl"
+          aria-label="Engineering software & applied AI platforms."
         >
-          Engineering software &<br />
-          applied AI{' '}
+          <span>Engineering software &amp;<br />applied AI </span>
           <span className="text-brand">platforms.</span>
         </motion.h1>
 

@@ -13,7 +13,9 @@ import CTASection from '@/components/ui/CTASection';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
+  title: {
+    absolute: siteConfig.title,
+  },
   description: siteConfig.description,
   alternates: {
     canonical: siteConfig.url,
@@ -25,11 +27,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'XENITH Solutions - AI Software Development & Custom Digital Products',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
+    images: [`${siteConfig.url}/og-image.png`],
   },
   robots: {
     index: true,
@@ -54,7 +65,7 @@ export default function Home() {
         '@id': `${siteConfig.url}/#organization`,
         name: siteConfig.name,
         url: siteConfig.url,
-        logo: `${siteConfig.url}/faiz.png`,
+        logo: `${siteConfig.url}/xenith-logo.png`,
         description: siteConfig.description,
         address: {
           '@type': 'PostalAddress',

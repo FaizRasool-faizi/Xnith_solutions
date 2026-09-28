@@ -8,13 +8,13 @@ const getBaseUrl = (): string => {
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL}`;
   }
-  return 'https://xenith-solutions.vercel.app';
+  return 'https://xnith-solutions.vercel.app';
 };
 
 export const siteConfig = {
   name: "XENITH Solutions",
   title: "XENITH Solutions | AI Software Development & Custom Digital Products",
-  description: "XENITH Solutions designs and builds custom AI software, web applications, SaaS platforms, and intelligent digital products for founders and growing businesses.",
+  description: "XENITH Solutions builds custom AI software, web applications, SaaS platforms, and intelligent digital products for businesses and startups.",
   url: getBaseUrl(),
   mainNav: [
     { title: "Home", href: "/" },
@@ -24,7 +24,7 @@ export const siteConfig = {
     { title: "Contact", href: "/contact" },
   ],
   companyInfo: {
-    email: "contact@xenith-solutions.com",
+    email: "sawerasaghir30@gmail.com",
     phone: "+92 317 4804970",
     address: "Lahore, Pakistan",
   },

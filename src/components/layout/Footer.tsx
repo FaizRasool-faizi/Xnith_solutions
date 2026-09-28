@@ -32,6 +32,9 @@ export default function Footer() {
                   {item.title}
                 </Link>
               ))}
+              <Link href="/privacy" className="hover:text-brand transition-colors">
+                Privacy Policy
+              </Link>
             </nav>
           </div>
 
@@ -59,8 +62,12 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-400">
-          <div>
-            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+          <div className="flex items-center gap-4">
+            <span>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
+            <span>·</span>
+            <Link href="/privacy" className="hover:text-brand transition-colors">
+              Privacy Policy
+            </Link>
           </div>
           <div className="flex gap-6 font-mono text-[11px] text-zinc-400">
             <span>Engineering Discipline</span>

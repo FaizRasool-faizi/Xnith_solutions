@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ExternalLink, X, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export interface Project {
@@ -103,10 +104,12 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
               >
                 {/* Header Container: Project Image */}
                 <div className="w-full h-60 bg-[#050508] relative overflow-hidden flex items-center justify-center">
-                  <img
+                  <Image
                     src={project.image}
                     alt={`${project.title} - ${project.category}`}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08080c] via-transparent to-transparent opacity-40 pointer-events-none" />

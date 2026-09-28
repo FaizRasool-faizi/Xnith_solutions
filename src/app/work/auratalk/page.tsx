@@ -4,23 +4,32 @@ import AuraTalkDetailSection from '@/components/ui/AuraTalkDetailSection';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: 'AuraTalk AI | Real-Time AI Avatar R&D | XENITH Solutions',
-  description: 'Technical case study of AuraTalk AI, an internal R&D prototype featuring real-time video avatar generation, CUDA-accelerated Wav2Lip neural lip-sync, and MediaPipe emotion tracking.',
+  title: 'AuraTalk AI | Real-Time AI Avatar R&D',
+  description: 'AuraTalk AI is an internal R&D prototype exploring real-time conversational AI avatars, voice interaction, and video synthesis.',
   alternates: {
     canonical: `${siteConfig.url}/work/auratalk`,
   },
   openGraph: {
     title: 'AuraTalk AI | Real-Time AI Avatar R&D | XENITH Solutions',
-    description: 'Technical case study of AuraTalk AI, an internal R&D prototype featuring real-time video avatar generation, CUDA-accelerated Wav2Lip neural lip-sync, and MediaPipe emotion tracking.',
+    description: 'AuraTalk AI is an internal R&D prototype exploring real-time conversational AI avatars, voice interaction, and video synthesis.',
     url: `${siteConfig.url}/work/auratalk`,
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${siteConfig.url}/AIAvatar.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'AuraTalk AI Real-Time Avatar R&D Prototype',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AuraTalk AI | Real-Time AI Avatar R&D | XENITH Solutions',
-    description: 'Technical case study of AuraTalk AI, an internal R&D prototype featuring real-time video avatar generation, CUDA-accelerated Wav2Lip neural lip-sync, and MediaPipe emotion tracking.',
+    description: 'AuraTalk AI is an internal R&D prototype exploring real-time conversational AI avatars, voice interaction, and video synthesis.',
+    images: [`${siteConfig.url}/AIAvatar.jpg`],
   },
 };
 
