@@ -17,7 +17,7 @@ export default function Footer() {
               Modern web applications, AI-powered software, SaaS platforms, and intelligent digital systems built for real-world business needs.
             </p>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              Lahore, Pakistan
+              Based in Lahore, Pakistan • Working with founders &amp; businesses internationally
             </p>
           </div>
 

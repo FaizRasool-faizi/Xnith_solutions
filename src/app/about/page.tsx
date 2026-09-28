@@ -7,9 +7,27 @@ import ValuesSection from '@/components/ui/ValuesSection';
 import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 import CTASection from '@/components/ui/CTASection';
 
+import { siteConfig } from '@/config/site';
+
 export const metadata: Metadata = {
-  title: 'About Us | XENITH Solutions',
-  description: 'XENITH Solutions is a software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building custom web applications, SaaS platforms, and intelligent digital systems.',
+  title: 'About XENITH Solutions | AI & Software Engineering Studio',
+  description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+  alternates: {
+    canonical: `${siteConfig.url}/about`,
+  },
+  openGraph: {
+    title: 'About XENITH Solutions | AI & Software Engineering Studio',
+    description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+    url: `${siteConfig.url}/about`,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About XENITH Solutions | AI & Software Engineering Studio',
+    description: 'Learn about XENITH Solutions, an independent software and AI engineering studio founded by Faiz Rasool and Sawera Saghir, building modern digital products and platforms.',
+  },
 };
 
 export default function AboutPage() {

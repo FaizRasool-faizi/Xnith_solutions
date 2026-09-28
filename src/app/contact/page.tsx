@@ -4,9 +4,27 @@ import ContactFormSection from '@/components/ui/ContactFormSection';
 import ContactFAQSection from '@/components/ui/ContactFAQSection';
 import ThreeWaysSection from '@/components/ui/ThreeWaysSection';
 
+import { siteConfig } from '@/config/site';
+
 export const metadata: Metadata = {
-  title: 'Contact Us | XENITH Solutions',
-  description: 'Start a project or inquire about custom software and AI solutions with XENITH Solutions.',
+  title: 'Contact XENITH Solutions | Start a Software or AI Project',
+  description: 'Connect directly with the software engineers at XENITH Solutions to discuss your custom web application, SaaS product, or AI system requirements.',
+  alternates: {
+    canonical: `${siteConfig.url}/contact`,
+  },
+  openGraph: {
+    title: 'Contact XENITH Solutions | Start a Software or AI Project',
+    description: 'Connect directly with the software engineers at XENITH Solutions to discuss your custom web application, SaaS product, or AI system requirements.',
+    url: `${siteConfig.url}/contact`,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact XENITH Solutions | Start a Software or AI Project',
+    description: 'Connect directly with the software engineers at XENITH Solutions to discuss your custom web application, SaaS product, or AI system requirements.',
+  },
 };
 
 export default function ContactPage() {

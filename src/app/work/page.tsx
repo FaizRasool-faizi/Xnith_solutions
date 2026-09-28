@@ -1,9 +1,27 @@
 import type { Metadata } from 'next';
 import WorkPageContent from '@/components/ui/WorkPageContent';
 
+import { siteConfig } from '@/config/site';
+
 export const metadata: Metadata = {
-  title: 'Work & Case Studies | XENITH Solutions',
-  description: 'Explore technical case studies and software applications engineered by XENITH Solutions, spanning applied AI, real-time computer vision, and modern web platforms.',
+  title: 'AI & Software Development Portfolio | XENITH Solutions',
+  description: 'Explore real AI software, custom web applications, 3D platforms, and digital product prototypes engineered by XENITH Solutions.',
+  alternates: {
+    canonical: `${siteConfig.url}/work`,
+  },
+  openGraph: {
+    title: 'AI & Software Development Portfolio | XENITH Solutions',
+    description: 'Explore real AI software, custom web applications, 3D platforms, and digital product prototypes engineered by XENITH Solutions.',
+    url: `${siteConfig.url}/work`,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI & Software Development Portfolio | XENITH Solutions',
+    description: 'Explore real AI software, custom web applications, 3D platforms, and digital product prototypes engineered by XENITH Solutions.',
+  },
 };
 
 export default function WorkPage() {

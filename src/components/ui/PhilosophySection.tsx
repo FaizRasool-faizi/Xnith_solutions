@@ -38,12 +38,13 @@ export default function PhilosophySection() {
             <span className="h-[1px] w-8 bg-brand"></span>
             THE DELIVERY MODEL
           </div>
+          {/* Main Headline */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-8">
-            Your AI native team,<br />
-            human and agent.
+            Human Engineering +<br />
+            AI-Assisted Workflows
           </h2>
           <p className="text-lg text-white/60 leading-relaxed max-w-2xl">
-            The way AI gets built has changed. We don&apos;t staff traditional headcount. We deploy AI fluent people and trained AI agents, working side by side.
+            We pair accountable human engineers with modern AI-accelerated workflows. Technical builders make architectural decisions and maintain code quality, while AI systems accelerate research, prototyping, and automated workflows.
           </p>
         </motion.div>
 
@@ -61,7 +62,7 @@ export default function PhilosophySection() {
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border border-brand/50 bg-[#0a0a0a] flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(245,105,255,0.15)]">
               <User className="w-10 h-10 md:w-12 md:h-12 text-brand" strokeWidth={1.5} />
             </div>
-            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">AI FLUENT<br/>OPERATORS</h3>
+            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">ACCOUNTABLE<br/>ENGINEERS</h3>
             <span className="text-[10px] font-mono tracking-widest text-white/40 uppercase">HUMAN</span>
           </motion.div>
 
@@ -81,7 +82,7 @@ export default function PhilosophySection() {
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border border-violet-500/50 bg-[#0a0a0a] flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(168,85,247,0.15)]">
               <Bot className="w-10 h-10 md:w-12 md:h-12 text-violet-400" strokeWidth={1.5} />
             </div>
-            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">TRAINED AI<br/>AGENTS</h3>
+            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">AI TOOLS &amp;<br/>AUTOMATION</h3>
             <span className="text-[10px] font-mono tracking-widest text-white/40 uppercase">AI</span>
           </motion.div>
 
@@ -104,7 +105,7 @@ export default function PhilosophySection() {
                 <Bot className="w-8 h-8 md:w-10 md:h-10 text-violet-400" strokeWidth={1.5} />
               </div>
             </div>
-            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">YOUR TEAM<br/>AI NATIVE</h3>
+            <h3 className="text-sm font-mono tracking-widest text-white uppercase mb-2">RELIABLE<br/>DELIVERY</h3>
             <span className="text-[10px] font-mono tracking-widest text-white/40 uppercase">EMBEDDED</span>
           </motion.div>
 
@@ -119,13 +120,13 @@ export default function PhilosophySection() {
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <div className="px-6 py-3 rounded-full border border-white/10 bg-[#0a0a0a] text-xs font-mono tracking-widest text-white/70 uppercase hover:border-brand/40 transition-colors">
-            AI FLUENT PEOPLE
+            ACCOUNTABLE BUILDERS
           </div>
           <div className="px-6 py-3 rounded-full border border-white/10 bg-[#0a0a0a] text-xs font-mono tracking-widest text-white/70 uppercase hover:border-brand/40 transition-colors">
-            TRAINED AI AGENTS
+            AI-ASSISTED WORKFLOWS
           </div>
           <div className="px-6 py-3 rounded-full border border-white/10 bg-[#0a0a0a] text-xs font-mono tracking-widest text-white/70 uppercase hover:border-brand/40 transition-colors">
-            WORKING SIDE BY SIDE
+            PRODUCTION STANDARDS
           </div>
         </motion.div>
 

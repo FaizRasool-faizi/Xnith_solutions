@@ -12,14 +12,14 @@ const platforms = [
     name: 'AGENT & VOICE',
     title: 'Multilingual Voice & Intent Engine',
     tagline: 'Autonomous natural language parsing and voice orchestration R&D',
-    desc: 'Our internal conversational R&D pipeline exploring sub-second voice input recognition, natural language intent classification, and automated agent dispatching across English and Urdu regional dialects.',
+    desc: 'Our internal conversational R&D pipeline exploring real-time voice input recognition, natural language intent classification, and automated agent dispatching across English and Urdu regional dialects.',
     tags: ['Gemini API', 'Intent Parsing', 'Urdu & English Voice', 'WebSockets', 'Autonomous Agents'],
     stats: [
       { value: 'Multi-Dialect', label: 'VOICE RECOGNITION' },
       { value: 'Agentic', label: 'AUTONOMOUS DISPATCH' }
     ],
     icon: Bot,
-    evidenceBadge: 'Engineered into the Appointix Platform',
+    evidenceBadge: 'Implemented in Appointix Platform',
     slug: '/work/appointix',
     angle: 0,
   },
@@ -28,7 +28,7 @@ const platforms = [
     num: '02',
     name: 'NEURAL VISION',
     title: 'Real-Time Neural Lip-Sync & Vision',
-    tagline: 'Sub-second video avatar generation and facial emotion tracking R&D',
+    tagline: 'Real-time video avatar generation and facial emotion tracking R&D',
     desc: 'Our neural media pipeline combining live camera emotion detection via MediaPipe, CUDA-accelerated Wav2Lip synthesis, and local LLM context to deliver expressive conversational video avatars directly in the browser.',
     tags: ['PyTorch CUDA', 'Wav2Lip Pipeline', 'Google MediaPipe', 'FastAPI', 'Local Llama 3'],
     stats: [
@@ -36,7 +36,7 @@ const platforms = [
       { value: 'MediaPipe', label: 'EMOTION TRACKING' }
     ],
     icon: Video,
-    evidenceBadge: 'Engineered into AuraTalk AI Avatar System',
+    evidenceBadge: 'Implemented in AuraTalk AI Prototype',
     slug: '/work/auratalk',
     angle: 120,
   },
@@ -53,7 +53,7 @@ const platforms = [
       { value: 'Zero Plugins', label: 'NATIVE RUNTIME' }
     ],
     icon: Box,
-    evidenceBadge: 'Engineered into Petstan 3D Marketplace',
+    evidenceBadge: 'Implemented in Petstan 3D Marketplace',
     slug: '/work/petstan',
     angle: 240,
   }
@@ -184,7 +184,7 @@ export default function EcosystemSection() {
                 {/* Evidence Callout */}
                 <div className="rounded-xl bg-zinc-900/80 border border-zinc-800 p-4 mb-8 max-w-xl">
                   <div className="text-[10px] font-mono tracking-wider text-brand font-semibold uppercase mb-1">
-                    PRODUCTION APPLICATION PROOF:
+                    APPLICATION PROOF:
                   </div>
                   <div className="text-sm text-zinc-200 font-medium">
                     {activePlatform.evidenceBadge}

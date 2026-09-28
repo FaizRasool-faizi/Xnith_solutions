@@ -13,8 +13,8 @@ const getBaseUrl = (): string => {
 
 export const siteConfig = {
   name: "XENITH Solutions",
-  title: "XENITH Solutions | AI Software Development & Custom Digital Platforms",
-  description: "XENITH Solutions builds custom AI software, web applications, SaaS platforms, and intelligent digital products for businesses and startups.",
+  title: "XENITH Solutions | AI Software Development & Custom Digital Products",
+  description: "XENITH Solutions designs and builds custom AI software, web applications, SaaS platforms, and intelligent digital products for founders and growing businesses.",
   url: getBaseUrl(),
   mainNav: [
     { title: "Home", href: "/" },

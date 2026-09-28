@@ -142,7 +142,7 @@ export default function AppointixDetailSection() {
         >
           <Image 
             src="/appointix.jpeg" 
-            alt="Appointix Showcase" 
+            alt="Appointix AI appointment and local service marketplace platform interface" 
             fill 
             className="object-cover object-center group-hover:scale-102 transition-transform duration-700" 
             priority
@@ -163,10 +163,10 @@ export default function AppointixDetailSection() {
             💡 PROJECT OVERVIEW
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-snug">
-            Intelligent, AI-driven hyperlocal marketplace connecting households with verified local service experts.
+            Intelligent, AI-driven hyperlocal marketplace connecting households with local service providers.
           </h2>
           <p className="text-base md:text-lg text-white/70 leading-relaxed">
-            Appointix eliminates the hassle of traditional scheduling and manual service provider searches. With an integrated AI Matching Engine, users can simply describe their required service (via text or multilingual voice in Urdu/English). Appointix evaluates user requirements, proximity, urgency, and budget to instantly suggest and rank top-rated verified service providers and streamline bookings.
+            Appointix streamlines scheduling and manual service discovery. With an integrated AI Matching Engine, users can describe their required service via text or multilingual voice in Urdu and English. Appointix evaluates user requirements, proximity, urgency, and budget to suggest suitable local service providers and coordinate bookings.
           </p>
         </motion.div>
 

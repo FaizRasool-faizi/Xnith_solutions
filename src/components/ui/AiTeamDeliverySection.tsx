@@ -28,12 +28,12 @@ export default function AiTeamDeliverySection() {
 
           {/* Main Headline */}
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-            Your AI native team,<br className="hidden sm:inline" /> human and agent.
+            Human Engineering +<br className="hidden sm:inline" /> AI-Assisted Workflows
           </h2>
 
           {/* Supporting Copy */}
           <p className="text-base sm:text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl font-normal">
-            The way AI gets built has changed. We don&apos;t staff traditional headcount. We deploy AI fluent people and trained AI agents, working side by side.
+            We pair accountable human software engineers with modern AI-accelerated workflows. Technical builders make architectural decisions and maintain code quality, while AI systems accelerate research, prototyping, and automated workflows.
           </p>
         </motion.div>
 
@@ -42,7 +42,7 @@ export default function AiTeamDeliverySection() {
           {/* Desktop & Tablet Flex Flow */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 relative">
             
-            {/* 1. NODE 1: AI FLUENT OPERATORS */}
+            {/* 1. NODE 1: ACCOUNTABLE ENGINEERS */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,7 @@ export default function AiTeamDeliverySection() {
 
               {/* Label */}
               <div className="mt-8 font-mono text-xs sm:text-sm font-bold tracking-widest text-zinc-100 uppercase leading-snug">
-                AI FLUENT<br />OPERATORS
+                ACCOUNTABLE<br />ENGINEERS
               </div>
             </motion.div>
 
@@ -71,7 +71,7 @@ export default function AiTeamDeliverySection() {
               </div>
             </div>
 
-            {/* 2. NODE 2: TRAINED AI AGENTS */}
+            {/* 2. NODE 2: AI TOOLS & AUTOMATION */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -86,7 +86,7 @@ export default function AiTeamDeliverySection() {
 
               {/* Label */}
               <div className="mt-8 font-mono text-xs sm:text-sm font-bold tracking-widest text-zinc-100 uppercase leading-snug">
-                TRAINED AI<br />AGENTS
+                AI TOOLS &amp;<br />AUTOMATION
               </div>
             </motion.div>
 
@@ -100,7 +100,7 @@ export default function AiTeamDeliverySection() {
               </div>
             </div>
 
-            {/* 3. NODE 3: YOUR TEAM AI NATIVE */}
+            {/* 3. NODE 3: RELIABLE DELIVERY */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -116,7 +116,7 @@ export default function AiTeamDeliverySection() {
 
               {/* Label */}
               <div className="mt-8 font-mono text-xs sm:text-sm font-bold tracking-widest text-brand uppercase leading-snug">
-                YOUR TEAM<br />AI NATIVE
+                RELIABLE<br />SOFTWARE DELIVERY
               </div>
             </motion.div>
 

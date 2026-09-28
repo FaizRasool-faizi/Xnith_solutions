@@ -28,7 +28,7 @@ const allProjects: Project[] = [
     category: 'AI-Powered Local Service Marketplace',
     status: 'Active Prototype',
     impactMetric: '8 Functional Modules',
-    desc: 'An intelligent marketplace connecting households with verified local service experts. Features automated request parsing, proximity ranking, and real-time scheduling.',
+    desc: 'An intelligent marketplace connecting households with local service providers. Features automated request parsing, proximity ranking, and real-time scheduling.',
     fullOverview: 'Appointix is an AI-powered local appointment and service marketplace. Built with Gemini AI, Next.js 14, and Expo React Native, it parses user requests, evaluates proximity, and coordinates real-time bookings.',
     techStack: ['Gemini AI', 'Next.js 14', 'TypeScript', 'Expo React Native', 'TailwindCSS'],
     features: ['Gemini AI Intent Parsing', 'Real-time Scheduling', 'Proximity Ranking', 'Cross-Platform Mobile App'],
@@ -43,7 +43,7 @@ const allProjects: Project[] = [
     status: 'Active Prototype',
     impactMetric: 'Interactive 3D WebGL',
     desc: 'A modern e-commerce platform specifically built for buying, selling, and adopting pets, pet food, and accessories across Pakistan.',
-    fullOverview: 'Petstan is a 3D interactive multi-vendor pet marketplace built with Next.js 14, Three.js, React 18, and Zustand. It connects buyers with verified breeders via interactive 3D hero showcases, health verification tracking, and seller dashboard analytics.',
+    fullOverview: 'Petstan is a 3D interactive multi-vendor pet marketplace built with Next.js 14, Three.js, React 18, and Zustand. It connects buyers with breeders and sellers via interactive 3D hero showcases, health documentation tracking, and seller dashboard analytics.',
     techStack: ['Next.js 14', 'Three.js', 'React Three Fiber', 'Zustand', 'PostgreSQL'],
     features: ['3D Interactive Hero Experience', 'Multi-Criteria Search & Filtering', 'Seller Analytics Workspace', 'Order Tracking Workflow'],
     image: '/petstan.jpeg',
@@ -54,7 +54,7 @@ const allProjects: Project[] = [
     title: 'AuraTalk AI',
     projectType: 'Internal R&D Prototype',
     category: 'CUDA-Accelerated Real-Time AI Avatar Platform',
-    status: 'Active / Beta',
+    status: 'Internal R&D Prototype',
     impactMetric: '7 Real-Time Modules · 5 Personas',
     desc: 'An interactive video assistant platform featuring CUDA-powered Wav2Lip neural lip-sync, MediaPipe facial emotion tracking, and local LLM context.',
     fullOverview: 'AuraTalk AI is an interactive video assistant platform built with FastAPI, WebSockets, MediaPipe computer vision, and local LLM inference. It combines computer vision, Wav2Lip neural lip-synchronization, and local language models to deliver dynamic, context-aware conversations.',
@@ -105,7 +105,7 @@ export default function WorkGridSection({ activeCategory }: WorkGridSectionProps
                 <div className="w-full h-60 bg-[#050508] relative overflow-hidden flex items-center justify-center">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} - ${project.category}`}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Gradient Overlay */}

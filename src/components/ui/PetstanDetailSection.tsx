@@ -44,8 +44,8 @@ const buyerFeatures = [
   },
   {
     icon: ShieldCheck,
-    title: "Petstan Secure Delivery & Escrow",
-    desc: "Multi-stage escrow protection (Held, Released, Refunded) ensuring safe and transparent transactions between buyers and breeders."
+    title: "Secure Order Lifecycle & Transaction Management",
+    desc: "Multi-stage transaction workflow (Pending, Held, Dispatched, Delivered) ensuring safe, transparent order coordination between buyers and sellers."
   }
 ];
 
@@ -67,8 +67,8 @@ const sellerFeatures = [
   },
   {
     icon: Store,
-    title: "Store & KYC Verification Settings",
-    desc: "Manage shop profiles, business hours, contact numbers, banking credentials, and breeder verification badges."
+    title: "Store & Breeder Profile Settings",
+    desc: "Manage shop profiles, business hours, contact numbers, banking details, and breeder profile verification."
   }
 ];
 
@@ -76,7 +76,7 @@ const techStackList = [
   { category: "Web Frontend & 3D", stack: "Next.js 14 (App Router), React 18, Tailwind CSS, Framer Motion, Three.js, React Three Fiber", icon: Code2 },
   { category: "Analytics & Charts", stack: "Recharts Visualization Library", icon: Cpu },
   { category: "State Management", stack: "Zustand (Global Reactive Store)", icon: Layers },
-  { category: "Database & Escrow", stack: "PostgreSQL, Prisma ORM, Health Certification Vault, Escrow Ledger", icon: Database }
+  { category: "Database & Backend", stack: "PostgreSQL, Prisma ORM, Health Certification Vault, Order Ledger", icon: Database }
 ];
 
 export default function PetstanDetailSection() {
@@ -139,7 +139,7 @@ export default function PetstanDetailSection() {
             </div>
             <div>
               <p className="text-[10px] font-mono text-white/40 uppercase tracking-widest">TRANSACTIONS</p>
-              <p className="text-sm font-semibold text-emerald-400 mt-1">Escrow Delivery & Health Verification</p>
+              <p className="text-sm font-semibold text-emerald-400 mt-1">Order Management & Health Documentation</p>
             </div>
           </div>
         </motion.div>
@@ -153,7 +153,7 @@ export default function PetstanDetailSection() {
         >
           <img 
             src="/petstan.jpeg" 
-            alt="Petstan Showcase" 
+            alt="Petstan 3D interactive multi-vendor pet marketplace interface with product showcase" 
             className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-transparent to-transparent opacity-60 pointer-events-none" />
@@ -178,7 +178,7 @@ export default function PetstanDetailSection() {
             Built using Next.js 14 (App Router), React 18, TypeScript, and Three.js, Petstan offers a visual, interactive 3D hero experience paired with an advanced seller workspace.
           </p>
           <p className="text-base md:text-lg text-white/70 leading-relaxed">
-            It bridges the gap between buyers and verified pet breeders/sellers through smart filtering, health certification tracking, seller analytics, and secure escrow delivery options.
+            It bridges the gap between buyers and pet breeders and sellers through smart filtering, health documentation tracking, seller analytics, and structured order management workflows.
           </p>
         </motion.div>
 

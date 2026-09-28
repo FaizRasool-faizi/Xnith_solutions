@@ -111,7 +111,7 @@ export default function HowWeStartSection() {
                 Direct Engineering Accountability
               </div>
               <p className="text-xs text-zinc-300 font-normal">
-                Built by engineers who work directly on the products they ship. No layers of non-technical management.
+                Built by engineers who work directly on the products they ship. Direct collaboration with technical builders.
               </p>
             </div>
           </div>

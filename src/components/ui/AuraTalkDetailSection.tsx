@@ -114,8 +114,8 @@ export default function AuraTalkDetailSection() {
             <span className="px-3.5 py-1 rounded-full bg-brand/15 border border-brand/30 text-brand text-xs font-semibold uppercase tracking-wider">
               CUDA-Accelerated Real-Time AI Avatar & Video Call Platform
             </span>
-            <span className="px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-semibold font-mono uppercase">
-              ● Active / Beta Stage
+            <span className="px-3 py-1 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-semibold font-mono uppercase">
+              ● Internal R&D Prototype
             </span>
           </div>
 
@@ -153,7 +153,7 @@ export default function AuraTalkDetailSection() {
         >
           <img 
             src="/AIAvatar.jpg" 
-            alt="AuraTalk AI Showcase" 
+            alt="AuraTalk AI conversational avatar video interface with emotion tracking and neural lip-sync" 
             className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-transparent to-transparent opacity-60 pointer-events-none" />

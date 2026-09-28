@@ -3,39 +3,47 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Layers, Bot, Eye, Box, ArrowRight } from 'lucide-react';
+import { Layers, Bot, Eye, Box, Cpu, ArrowRight } from 'lucide-react';
 
 const services = [
   {
     num: '01',
     title: 'Full-Stack Web & Mobile Development',
-    desc: 'Custom web applications, dashboards, SaaS products, and mobile apps built for long-term scalability and smooth performance. Built with Next.js 16, React 19, TypeScript, and React Native.',
+    desc: 'Custom web applications, dashboards, SaaS products, and mobile apps built for long-term scalability and smooth performance. Built with Next.js, React 19, TypeScript, and React Native.',
     icon: Layers,
-    evidenceText: 'Proven in Appointix Platform',
+    evidenceText: 'Implemented in Appointix Platform',
     evidenceLink: '/work/appointix'
   },
   {
     num: '02',
-    title: 'AI & LLM Integration',
-    desc: 'Intelligent AI assistants and automated workflows that can work directly with your private business documents and knowledge. Powered by Google Gemini, OpenAI, and local Llama models.',
+    title: 'AI & LLM Application Development',
+    desc: 'Intelligent AI assistants, document knowledge systems, and natural language interfaces powered by Google Gemini, Groq, and local open-source models.',
     icon: Bot,
-    evidenceText: 'Proven in Appointix Gemini Engine',
+    evidenceText: 'Implemented in Appointix Gemini Engine',
     evidenceLink: '/work/appointix'
   },
   {
     num: '03',
-    title: 'Computer Vision & Real-Time AI',
-    desc: 'Software that can understand images, video, and visual information in real time, paired with natural voice interfaces. Built with Google MediaPipe and CUDA-accelerated neural pipelines.',
-    icon: Eye,
-    evidenceText: 'Proven in AuraTalk AI Neural Engine',
-    evidenceLink: '/work/auratalk'
+    title: 'AI Automation & Intelligent Workflows',
+    desc: 'Automated data pipelines, webhook processing, and multi-system notifications that eliminate repetitive manual tasks and accelerate operations.',
+    icon: Cpu,
+    evidenceText: 'Implemented in Appointix Dispatch Workflow',
+    evidenceLink: '/work/appointix'
   },
   {
     num: '04',
-    title: '3D Web & Digital Platforms',
+    title: 'Computer Vision & Real-Time AI',
+    desc: 'Software that processes images, video streams, and facial landmarks in real time, paired with natural voice interfaces. Built with Google MediaPipe and CUDA pipelines.',
+    icon: Eye,
+    evidenceText: 'Implemented in AuraTalk AI Neural Engine',
+    evidenceLink: '/work/auratalk'
+  },
+  {
+    num: '05',
+    title: '3D Web & Interactive Digital Platforms',
     desc: 'Immersive 3D product visualizers, marketplaces, and modern digital commerce systems that let customers interact with products directly in the browser using Three.js and WebGL.',
     icon: Box,
-    evidenceText: 'Proven in Petstan 3D Marketplace',
+    evidenceText: 'Implemented in Petstan 3D Marketplace',
     evidenceLink: '/work/petstan'
   }
 ];

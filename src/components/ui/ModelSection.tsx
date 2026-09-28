@@ -93,7 +93,7 @@ export default function ModelSection() {
                 Proprietary Product Lab
               </h3>
               <p className="text-lg text-zinc-200 mb-4 font-semibold">
-                Our own software experiments and deployed platforms.
+                Our own software experiments and product prototypes.
               </p>
               <p className="text-zinc-300 leading-relaxed mb-8 text-sm sm:text-base font-normal">
                 As software builders, we actively engineer and launch our own digital products—exploring cutting-edge technologies like real-time neural lip-sync, interactive 3D WebGL, and autonomous AI agents.
