@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${siteConfig.url}/petstan.jpeg`,
-        width: 1200,
-        height: 630,
+        width: 1600,
+        height: 708,
         alt: 'Petstan 3D Multi-Vendor Pet Marketplace Prototype',
       },
     ],

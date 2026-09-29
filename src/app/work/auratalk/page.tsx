@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${siteConfig.url}/AIAvatar.jpg`,
-        width: 1200,
-        height: 630,
+        width: 1600,
+        height: 727,
         alt: 'AuraTalk AI Real-Time Avatar R&D Prototype',
       },
     ],

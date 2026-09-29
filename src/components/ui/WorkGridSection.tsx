@@ -30,8 +30,8 @@ const allProjects: Project[] = [
     status: 'Active Prototype',
     impactMetric: '8 Functional Modules',
     desc: 'An intelligent marketplace connecting households with local service providers. Features automated request parsing, proximity ranking, and real-time scheduling.',
-    fullOverview: 'Appointix is an AI-powered local appointment and service marketplace. Built with Gemini AI, Next.js 14, and Expo React Native, it parses user requests, evaluates proximity, and coordinates real-time bookings.',
-    techStack: ['Gemini AI', 'Next.js 14', 'TypeScript', 'Expo React Native', 'TailwindCSS'],
+    fullOverview: 'Appointix is an AI-powered local appointment and service marketplace. Built with Gemini AI, Next.js 16, and Expo React Native, it parses user requests, evaluates proximity, and coordinates real-time bookings.',
+    techStack: ['Gemini AI', 'Next.js 16', 'TypeScript', 'Expo React Native', 'TailwindCSS'],
     features: ['Gemini AI Intent Parsing', 'Real-time Scheduling', 'Proximity Ranking', 'Cross-Platform Mobile App'],
     image: '/appointix.jpeg',
     slug: '/work/appointix'
